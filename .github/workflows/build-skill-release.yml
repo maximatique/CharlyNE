@@ -1,0 +1,50 @@
+name: Build standalone skill release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/skill/**'
+      - 'src/kb/**'
+      - 'tests/**'
+      - 'scripts/build_skill_release.py'
+      - '.github/workflows/build-skill-release.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-verify:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build and validate skill
+        run: python scripts/build_skill_release.py
+
+      - name: Verify package structure
+        run: |
+          unzip -t skill.zip
+          test "$(unzip -Z1 skill.zip | wc -l)" -eq 11
+          cmp skill.zip releases/v1.3.0/skill.zip
+          sha256sum skill.zip releases/v1.3.0/skill.zip
+
+      - name: Publish generated package
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add skill.zip releases/v1.3.0/skill.zip releases/v1.3.0/validation-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Rebuild validated v1.3.0 skill package [skip ci]'
+            git push
+          fi
