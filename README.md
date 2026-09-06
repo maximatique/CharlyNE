@@ -30,11 +30,25 @@ Cette version met de côté le packaging Projet et distribue une Skill autonome 
 
 Les principaux enrichissements concernent la décentralisation et les Provinces, l’écologie bas carbone, la politique sociale, la sécurité et la justice, l’immigration, la souveraineté technologique, la défense, la dissuasion et la doctrine internationale.
 
-## Installation
+## Installation ChatGPT / Claude
 
-Le package prêt à installer est : `releases/v1.3.0/skill.zip`.
+### Méthode recommandée — `skill.zip`
 
-L’archive conserve le dossier racine `charly-coach-militant-ne/` et le champ `name: charly-coach-militant-ne`. Une nouvelle installation de la version remplace donc la Skill précédente à identité technique constante, au lieu de créer une Skill parallèle.
+1. Télécharger `releases/v1.3.0/skill.zip` depuis ce dépôt.
+2. Dans ChatGPT : ouvrir **Plugins > Compétences > Créer > Importer depuis votre ordinateur**, puis sélectionner `skill.zip`.
+3. Dans Claude.ai : ouvrir **Settings > Capabilities > Skills**, puis importer le même `skill.zip`.
+
+Cette méthode est la méthode de distribution de référence pour cette release.
+
+### Installation depuis l’URL du dépôt
+
+Vous pouvez également essayer dans un chat :
+
+`Installe la skill https://github.com/maximatique/CharlyNE`
+
+Cette forme dépend des capacités disponibles dans le produit et de ses accès au dépôt ; elle ne doit pas être considérée comme la méthode garantie d’installation. Si l’installation directe depuis l’URL n’est pas proposée, utiliser `skill.zip`.
+
+L’archive conserve le dossier racine `charly-coach-militant-ne/` et le champ `name: charly-coach-militant-ne`. Le nom visible reste **CharlyNé**. Les mises à jour doivent conserver cette identité technique afin d’éviter la création d’une Skill parallèle.
 
 ## Structure
 
