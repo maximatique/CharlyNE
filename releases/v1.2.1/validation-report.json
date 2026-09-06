@@ -1,0 +1,24 @@
+{
+  "release_version": "1.2.1",
+  "spec_version": "1.2",
+  "ontology_version": "0.2.0",
+  "validated_at": "2026-09-06",
+  "identity": {
+    "canonical_skill_name": "charly-coach-militant-ne",
+    "root_folder": "charly-coach-militant-ne",
+    "display_name": "CoachNé",
+    "aliases": ["CoachNé", "CharlyNé", "@CoachNé"],
+    "upgrade_identity_stable": true
+  },
+  "checks": {
+    "skill_validator": "PASS",
+    "kb_project_fallback_byte_identity": "PASS",
+    "reference_tests": "30/30",
+    "doctrinal_content_changed": false
+  },
+  "sha256": {
+    "skill.zip": "82494c82023630cc48b3d43b23f25b5dc846a1501c4b1b21e97c89f23078c3d1",
+    "charly-project-gpt-claude-v1.2.1.zip": "845a533e90d2193f66f367c20b90c7a42254aa63d03196a59f19ea49e7495819"
+  },
+  "legal_review_required": true
+}
