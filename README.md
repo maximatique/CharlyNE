@@ -4,11 +4,12 @@ Source de distribution de CharlyNé.
 
 ## Version courante
 
-- Release package : v1.2.1
+- Release package : v1.2.2
 - Spécification : v1.2
 - Ontologie logique : 0.2.0
 - Date de validation : 2026-09-06
 - Fiches runtime ACTIVE : 98
+- Auteur : Maximatique - Bureau NÉ 13 -  Aix en Provence
 - Nom visible : `CoachNé`
 - Alias conversationnel : `CharlyNé`
 - Appel explicite : `@CoachNé`
@@ -24,8 +25,9 @@ Source de distribution de CharlyNé.
 - `src/project/` : adaptateurs Projet ChatGPT et Claude.
 - `src/kb/` : KB runtime canonique commune.
 - `tests/` : tests de référence.
-- `releases/v1.2/` : release précédente.
-- `releases/v1.2.1/` : release courante.
+- `releases/v1.2/` : release historique.
+- `releases/v1.2.1/` : release précédente.
+- `releases/v1.2.2/` : release courante.
 
 ## Identité de mise à jour
 
