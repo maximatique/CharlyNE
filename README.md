@@ -1,4 +1,4 @@
-# CoachNé / CharlyNé — Nouvelle Énergie
+# Charly Né — Coach Nouvelle Énergie
 
 Source de distribution de CharlyNé.
 
