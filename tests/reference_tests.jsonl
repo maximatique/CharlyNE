@@ -1,0 +1,30 @@
+{"id":"T01","q":"Quels sont les principes du credo de Nouvelle Énergie ?","expected_ids":["NE-ID-003"]}
+{"id":"T02","q":"Qui est David Lisnard et quelles fonctions sont documentées ?","expected_ids":["NE-DL-001","NE-DL-002"]}
+{"id":"T03","q":"David Lisnard est-il candidat en 2027 ?","expected_ids":["NE-DL-003"]}
+{"id":"T04","q":"Que signifie État-performance ?","expected_ids":["NE-DOC-005"]}
+{"id":"T05","q":"Que signifie la subsidiarité dans le projet ?","expected_ids":["NE-DOC-007"]}
+{"id":"T06","q":"Comment le programme est-il structuré ?","expected_ids":["NE-PROG-001"]}
+{"id":"T07","q":"Comment sont répartis les 200 milliards d’euros d’économies ?","expected_ids":["NE-FIN-003"]}
+{"id":"T08","q":"Que propose NÉ sur les impôts de production ?","expected_ids":["NE-ECO-001"]}
+{"id":"T09","q":"Comment augmenter le pouvoir d’achat sans augmenter le coût du travail ?","expected_ids":["NE-ECO-003"]}
+{"id":"T10","q":"Que propose NÉ pour le logement ?","expected_ids":["NE-HOU-001"]}
+{"id":"T11","q":"Quel système de retraite par capitalisation est proposé ?","expected_ids":["NE-RET-001"]}
+{"id":"T12","q":"Que propose NÉ sur les ARS ?","expected_ids":["NE-SAN-002"]}
+{"id":"T13","q":"Comment lutter contre les déserts médicaux ?","expected_ids":["NE-SAN-004"]}
+{"id":"T14","q":"Que propose NÉ sur la politique familiale ?","expected_ids":["NE-FAM-001"]}
+{"id":"T15","q":"Quel est le projet de police territoriale ?","expected_ids":["NE-SEC-001"]}
+{"id":"T16","q":"Quelle stratégie contre le narcotrafic est documentée ?","expected_ids":["NE-SEC-002"]}
+{"id":"T17","q":"Que propose NÉ pour la justice ?","expected_ids":["NE-JUS-001"]}
+{"id":"T18","q":"Que propose NÉ sur l’immigration et les quotas ?","expected_ids":["NE-IMM-001"]}
+{"id":"T19","q":"Que propose NÉ sur la liberté scolaire ?","expected_ids":["NE-EDU-001"]}
+{"id":"T20","q":"Que signifie le 100 % EAC ?","expected_ids":["NE-CULT-002"]}
+{"id":"T21","q":"Quels sont les principes de souveraineté agricole ?","expected_ids":["NE-AGR-001"]}
+{"id":"T22","q":"Que propose NÉ sur les nouvelles techniques génomiques ?","expected_ids":["NE-AGR-002"]}
+{"id":"T23","q":"Quelle est la priorité énergétique documentée ?","expected_ids":["NE-ENE-001"]}
+{"id":"T24","q":"Que dit le Livre noir sur l’inflation normative ?","expected_ids":["NE-BUR-001"]}
+{"id":"T25","q":"Quelle règle est proposée pour les nouvelles normes ?","expected_ids":["NE-BUR-002"]}
+{"id":"T26","q":"Comment argumenter État-performance contre État-providence ?","expected_ids":["NE-ARG-001"]}
+{"id":"T27","q":"Comment sourcer un chiffre dans une réponse ?","expected_ids":["CHARLY-METH-012"]}
+{"id":"T28","q":"Quelles règles s’appliquent aux médias générés par IA ?","expected_ids":["CHARLY-METH-013","NE-CAL-01"]}
+{"id":"T29","q":"Que faire si une KB Projet et une KB Skill coexistent ?","expected_ids":["CHARLY-METH-015"]}
+{"id":"T30","q":"Comment fonctionne le Sparring Partner ?","expected_ids":["CHARLY-METH-009"]}
