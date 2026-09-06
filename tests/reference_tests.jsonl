@@ -26,5 +26,15 @@
 {"id":"T26","q":"Comment argumenter État-performance contre État-providence ?","expected_ids":["NE-ARG-001"]}
 {"id":"T27","q":"Comment sourcer un chiffre dans une réponse ?","expected_ids":["CHARLY-METH-012"]}
 {"id":"T28","q":"Quelles règles s’appliquent aux médias générés par IA ?","expected_ids":["CHARLY-METH-013","NE-CAL-01"]}
-{"id":"T29","q":"Que faire si une KB Projet et une KB Skill coexistent ?","expected_ids":["CHARLY-METH-015"]}
+{"id":"T29","q":"Quel est le nom visible et comment invoquer l’assistant ?","expected_ids":["CHARLY-METH-017"]}
 {"id":"T30","q":"Comment fonctionne le Sparring Partner ?","expected_ids":["CHARLY-METH-009"]}
+{"id":"T31","q":"Que propose Nouvelle Énergie sur les Provinces et la décentralisation ?","expected_ids":["NE-DEC-001","NE-DEC-002"]}
+{"id":"T32","q":"Quelle est la doctrine écologique bas carbone ?","expected_ids":["NE-ENV-001"]}
+{"id":"T33","q":"Que propose Nouvelle Énergie sur l’allocation sociale unique ?","expected_ids":["NE-SOC-001"]}
+{"id":"T34","q":"Que propose Nouvelle Énergie sur les subventions aux entreprises ?","expected_ids":["NE-ECO-006"]}
+{"id":"T35","q":"Que propose Nouvelle Énergie sur le non-remplacement de fonctions administratives ?","expected_ids":["NE-STATE-006"]}
+{"id":"T36","q":"Quelle position est documentée sur l’islamisme radical ?","expected_ids":["NE-SEC-003"]}
+{"id":"T37","q":"Que propose Nouvelle Énergie sur la justice pénale des mineurs ?","expected_ids":["NE-JUS-002"]}
+{"id":"T38","q":"Que signifie la souveraineté technologique dans la KB ?","expected_ids":["NE-TECH-001"]}
+{"id":"T39","q":"Quelle doctrine de défense et de dissuasion est documentée ?","expected_ids":["NE-DEF-001","NE-DEF-002"]}
+{"id":"T40","q":"Que signifie souveraineté d’alliances ?","expected_ids":["NE-INT-001","NE-INT-002"]}
