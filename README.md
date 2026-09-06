@@ -1,45 +1,49 @@
-# Charly Né — Coach Nouvelle Énergie
+# CharlyNé — Coach Nouvelle Énergie
 
-Source de distribution de CharlyNé.
+Dépôt de distribution et de versioning de **CharlyNé**.
 
 ## Version courante
 
-- Release package : v1.2.3
-- Spécification : v1.2
-- Ontologie logique : 0.2.0
-- Date de validation : 2026-09-06
-- Fiches runtime ACTIVE : 98
-- Auteur : Maximatique - Bureau NÉ 13 -  Aix en Provence
-- Nom visible : `CoachNé`
+- Release : **v1.3.0**
+- Nom visible : **CharlyNé**
 - Handle principal : `@charly`
 - Alias : `@charlyné`, `CoachNé`, `Lisnardassistant`, `assitantné`, `Charlyne`, `coachmilitant`
 - Identifiant technique immuable : `charly-coach-militant-ne`
-- Skill ChatGPT/Codex : validée par le validateur Skill
-- Package Projet : commun ChatGPT / Claude
-- Tests de référence : 30/30
-- KB Projet / fallback Skill : identité d’octets vérifiée dans le build validé
+- Spécification : v1.2
+- Ontologie logique : **0.3.0**
+- Package distribué : **Skill autonome** ChatGPT / Claude
+- Auteur : Maximatique - Bureau NÉ 13 -  Aix en Provence
+
+## Release v1.3.0
+
+Cette version met de côté le packaging Projet et distribue une Skill autonome contenant sa KB runtime sous `references/kb/`.
+
+- 118 objets dans l’ontologie maître
+- 115 objets `ACTIVE`
+- 3 objets `ARBITRATION_REQUIRED` exclus du runtime
+- 2 méthodes techniques liées au mode Projet exclues du périmètre de cette release
+- 113 connaissances actives embarquées
+- 126 relations runtime
+- 16 sources actives
+- 16 compétences actives
+- 40 tests de référence
+
+Les principaux enrichissements concernent la décentralisation et les Provinces, l’écologie bas carbone, la politique sociale, la sécurité et la justice, l’immigration, la souveraineté technologique, la défense, la dissuasion et la doctrine internationale.
+
+## Installation
+
+Le package prêt à installer est : `releases/v1.3.0/skill.zip`.
+
+L’archive conserve le dossier racine `charly-coach-militant-ne/` et le champ `name: charly-coach-militant-ne`. Une nouvelle installation de la version remplace donc la Skill précédente à identité technique constante, au lieu de créer une Skill parallèle.
 
 ## Structure
 
-- `src/skill/` : adaptateur Skill ChatGPT/Codex.
-- `src/project/` : adaptateurs Projet ChatGPT et Claude.
-- `src/kb/` : KB runtime canonique commune.
-- `tests/` : tests de référence.
-- `releases/v1.2/` : release historique.
-- `releases/v1.2.1/` : release historique.
-- `releases/v1.2.2/` : release précédente.
-- `releases/v1.2.3/` : release courante.
+- `src/skill/` : source de la Skill autonome.
+- `src/kb/` : KB runtime canonique générée depuis l’ontologie maître.
+- `tests/reference_tests.jsonl` : tests de référence de la release courante.
+- `releases/v1.3.0/` : package installable, notes et rapport de validation.
+- `src/project/` : historique conservé ; hors périmètre de la release v1.3.0.
 
-## Invocation
+## Fiabilité
 
-Le handle principal est `@charly`. Les formes `@charlyné`, `CoachNé`, `Lisnardassistant`, `assitantné`, `Charlyne` et `coachmilitant` sont des alias d’invocation équivalents.
-
-## Identité de mise à jour
-
-Toute release conserve exactement le champ `name: charly-coach-militant-ne` et le dossier racine `charly-coach-militant-ne/`. Les handles et alias d’invocation n’altèrent jamais cette identité canonique et ne doivent jamais être utilisés comme nouveau `name` technique.
-
-`src/kb/charly_knowledge.jsonl.gz` est la version compressée du JSONL runtime. Les packages de distribution réinjectent ce même contenu décompressé dans la Skill et dans le Projet ; deux versions de KB ne sont jamais fusionnées.
-
-## Statut
-
-Version techniquement validée. Les connaissances `ARBITRATION_REQUIRED` restent exclues du runtime. Le drapeau `legal_review_required=true` reste en vigueur conformément à la spécification v1.2 ; cette validation ne vaut pas relecture juridique.
+La doctrine et les connaissances politiques sont produites depuis la chaîne de vérité du Studio. Les éléments `ARBITRATION_REQUIRED` restent exclus du runtime. La validation technique du package ne remplace pas la relecture juridique prévue par la spécification.
