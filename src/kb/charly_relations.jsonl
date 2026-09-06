@@ -1,0 +1,103 @@
+{"a":"NE-ID-002","b":"NE-ID-001","r":"PART_OF","d":"La vision synthétise la finalité générale du parti.","src":["SRC-PARTI-2026"]}
+{"a":"NE-ID-003","b":"NE-ID-001","r":"PART_OF","d":"Le credo formalise les principes du parti.","src":["SRC-PARTI-2026"]}
+{"a":"NE-ID-004","b":"NE-ID-001","r":"PART_OF","d":"L’organisation nationale fait partie de l’identité du parti.","src":["SRC-PARTI-2026"]}
+{"a":"NE-ID-005","b":"NE-ID-004","r":"PART_OF","d":"Les relais forment le réseau territorial de l’organisation.","src":["SRC-PARTI-2026"]}
+{"a":"NE-DL-001","b":"NE-ID-001","r":"LEADS","d":"David Lisnard préside Nouvelle Énergie.","src":["SRC-PARTI-2026"]}
+{"a":"NE-DL-003","b":"NE-DL-001","r":"ATTRIBUTE_OF","d":"La candidature 2027 est une position/état attribué à David Lisnard.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DOC-001","b":"NE-ID-003","r":"PART_OF","d":"La liberté est un principe du credo.","src":["SRC-PARTI-2026"]}
+{"a":"NE-DOC-002","b":"NE-ID-003","r":"PART_OF","d":"La responsabilité est un principe du credo.","src":["SRC-PARTI-2026"]}
+{"a":"NE-DOC-003","b":"NE-ID-003","r":"PART_OF","d":"L’ordre est un principe structurant.","src":["SRC-MANIFESTE-2026"]}
+{"a":"NE-DOC-004","b":"NE-ID-003","r":"PART_OF","d":"La dignité est une finalité structurante.","src":["SRC-MANIFESTE-2026"]}
+{"a":"NE-DOC-005","b":"NE-DOC-006","r":"CONTRASTS_WITH","d":"État-performance est opposé au modèle qualifié de social-étatiste / État-providence.","src":["SRC-FAQ-2026","SRC-MEDIA-2026"]}
+{"a":"NE-DOC-007","b":"NE-DOC-001","r":"SUPPORTS","d":"La subsidiarité est présentée comme une condition de liberté locale et d’efficacité.","src":["SRC-PROG-2026"]}
+{"a":"NE-DOC-008","b":"NE-ID-002","r":"SUPPORTS","d":"La souveraineté contribue à la vision de redressement national.","src":["SRC-PARTI-2026"]}
+{"a":"NE-DOC-009","b":"NE-ID-002","r":"SUPPORTS","d":"L’unité nationale est une des trois finalités.","src":["SRC-PARTI-2026"]}
+{"a":"NE-DOC-012","b":"NE-DOC-009","r":"SUPPORTS","d":"La culture et la transmission sont mobilisées pour l’unité nationale.","src":["SRC-CULTURE-2021"]}
+{"a":"NE-PROG-001","b":"NE-ID-001","r":"IMPLEMENTS","d":"Le programme opérationnalise la vision du parti.","src":["SRC-PROG-2026"]}
+{"a":"NE-FIN-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-FIN-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-FIN-004","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-STATE-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-STATE-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-STATE-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-STATE-004","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-STATE-005","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-INST-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-INST-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-INST-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-EU-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ECO-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ECO-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ECO-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ECO-004","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ECO-005","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-HOU-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-RET-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SAN-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SAN-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SAN-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SAN-004","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SAN-005","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-FAM-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SEC-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SEC-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-JUS-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-IMM-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-IMM-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-IMM-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-EDU-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-EDU-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-EDU-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-CULT-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-CULT-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-CULT-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-CULT-004","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-AGR-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-AGR-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-AGR-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-AGR-004","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-AGR-005","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-AGR-006","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ENE-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ENE-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-CLI-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-BUR-001","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-BUR-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-BUR-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-FIN-001","b":"NE-DOC-003","r":"SUPPORTS","d":"La maîtrise des comptes est une dimension de l’ordre.","src":["SRC-MANIFESTE-2026"]}
+{"a":"NE-FIN-003","b":"NE-ECO-003","r":"FUNDS","d":"Une partie des économies finance la baisse des cotisations et le pouvoir d’achat.","src":["SRC-FAQ-2026"]}
+{"a":"NE-STATE-001","b":"NE-DOC-005","r":"IMPLEMENTS","d":"Le redéploiement vers le terrain concrétise l’État-performance.","src":["SRC-PROG-2026"]}
+{"a":"NE-STATE-002","b":"NE-DOC-001","r":"SUPPORTS","d":"La réduction des contraintes est justifiée par la liberté d’action.","src":["SRC-BUREAU-2026"]}
+{"a":"NE-STATE-004","b":"NE-BUR-003","r":"RELATED_TO","d":"Contrôle a posteriori et lutte contre les surtranspositions relèvent de la même doctrine de simplification.","src":["SRC-BUREAU-2026"]}
+{"a":"NE-INST-003","b":"NE-DOC-008","r":"SUPPORTS","d":"Le référendum est mobilisé pour la souveraineté démocratique.","src":["SRC-BAYEUX-2026"]}
+{"a":"NE-EU-001","b":"NE-DOC-007","r":"IMPLEMENTS","d":"La subsidiarité détermine la répartition des compétences européennes.","src":["SRC-PROG-2026"]}
+{"a":"NE-ECO-003","b":"NE-DOC-010","r":"SUPPORTS","d":"L’augmentation du revenu du travail soutient la valorisation du travail.","src":["SRC-FAQ-2026"]}
+{"a":"NE-RET-001","b":"NE-ECO-005","r":"RELATED_TO","d":"La capitalisation est aussi présentée comme outil de constitution de patrimoine.","src":["SRC-CANNES-2026"]}
+{"a":"NE-SAN-002","b":"NE-DOC-007","r":"IMPLEMENTS","d":"La gouvernance sanitaire locale applique la subsidiarité.","src":["SRC-SANTE-2026"]}
+{"a":"NE-SAN-005","b":"NE-DOC-008","r":"IMPLEMENTS","d":"La souveraineté sanitaire est une déclinaison de la souveraineté nationale.","src":["SRC-SANTE-2026"]}
+{"a":"NE-SEC-001","b":"NE-DOC-003","r":"IMPLEMENTS","d":"La politique de sécurité décline l’objectif d’ordre.","src":["SRC-MANIFESTE-2026"]}
+{"a":"NE-SEC-001","b":"NE-DOC-001","r":"SUPPORTS","d":"La sécurité est présentée comme condition de liberté.","src":["SRC-MANIFESTE-2026"]}
+{"a":"NE-IMM-001","b":"NE-DOC-009","r":"SUPPORTS","d":"La maîtrise de l’immigration est reliée à l’unité et l’assimilation.","src":["SRC-PARTI-2026"]}
+{"a":"NE-IMM-002","b":"NE-DOC-008","r":"IMPLEMENTS","d":"La souveraineté juridique est une déclinaison de la souveraineté.","src":["SRC-BAYEUX-2026"]}
+{"a":"NE-EDU-001","b":"NE-DOC-001","r":"IMPLEMENTS","d":"Le libre choix scolaire est présenté comme une forme de liberté.","src":["SRC-CANNES-2026"]}
+{"a":"NE-EDU-002","b":"NE-DOC-012","r":"IMPLEMENTS","d":"Culture et transmission sont intégrées au projet éducatif.","src":["SRC-CULTURE-2021"]}
+{"a":"NE-CULT-002","b":"NE-CULT-001","r":"IMPLEMENTS","d":"L’EAC est un instrument de la stratégie culturelle.","src":["SRC-CULTURE-2021"]}
+{"a":"NE-AGR-001","b":"NE-DOC-008","r":"IMPLEMENTS","d":"La souveraineté alimentaire décline la souveraineté nationale.","src":["SRC-AGRI-2026"]}
+{"a":"NE-AGR-006","b":"NE-STATE-002","r":"IMPLEMENTS","d":"La simplification agricole applique la doctrine générale de réduction des normes.","src":["SRC-AGRI-2026"]}
+{"a":"NE-ENE-001","b":"NE-DOC-008","r":"IMPLEMENTS","d":"Le nucléaire est associé à la souveraineté énergétique.","src":["SRC-MEDIA-2026"]}
+{"a":"NE-ENE-002","b":"NE-DOC-011","r":"SUPPORTS","d":"La politique bas carbone s’appuie sur innovation et technologies.","src":["SRC-MANIFESTE-2026"]}
+{"a":"NE-BUR-002","b":"NE-STATE-002","r":"IMPLEMENTS","d":"La règle de flux normatif concrétise la réduction des normes.","src":["SRC-BUREAU-2026"]}
+{"a":"NE-ARG-001","b":"NE-DOC-005","r":"EXPLAINS","d":"Argumentaire rattaché au concept État-performance.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ARG-002","b":"NE-BUR-001","r":"EXPLAINS","d":"Argumentaire rattaché au diagnostic bureaucratique.","src":["SRC-BUREAU-2026"]}
+{"a":"NE-ARG-003","b":"NE-ECO-003","r":"EXPLAINS","d":"Argumentaire rattaché au pouvoir d’achat.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ARG-004","b":"NE-SAN-001","r":"EXPLAINS","d":"Argumentaire rattaché à la réforme de santé.","src":["SRC-SANTE-2026"]}
+{"a":"NE-ARG-005","b":"NE-AGR-001","r":"EXPLAINS","d":"Argumentaire rattaché à la souveraineté agricole.","src":["SRC-AGRI-2026"]}
+{"a":"NE-ARG-006","b":"NE-RET-001","r":"EXPLAINS","d":"Argumentaire rattaché à la retraite mixte.","src":["SRC-PROG-2026"]}
+{"a":"NE-ARG-007","b":"NE-SEC-001","r":"EXPLAINS","d":"Argumentaire rattaché à la sécurité.","src":["SRC-MANIFESTE-2026"]}
+{"a":"CHARLY-METH-011","b":"CHARLY-METH-002","r":"SUPPORTS","d":"L’encadrement des tiers étend la règle générale de non-invention.","src":["SRC-SPEC-001"]}
+{"a":"CHARLY-METH-012","b":"CHARLY-METH-002","r":"SUPPORTS","d":"Le sourcing obligatoire rend la non-invention vérifiable pour les faits et chiffres.","src":["SRC-SPEC-001"]}
+{"a":"NE-CAL-01","b":"CHARLY-METH-006","r":"RELATED_TO","d":"Le calendrier détermine les obligations de conformité associées aux productions.","src":["SRC-SPEC-001"]}
+{"a":"CHARLY-METH-013","b":"CHARLY-METH-005","r":"IMPLEMENTS","d":"Les règles média intègrent l’étiquetage public des contenus IA lorsque requis.","src":["SRC-SPEC-001"]}
+{"a":"CHARLY-METH-014","b":"NE-CAL-01","r":"PART_OF","d":"La publicité électorale et les dépenses relèvent du cadre calendaire de conformité.","src":["SRC-SPEC-001"]}
+{"a":"CHARLY-METH-015","b":"CHARLY-METH-001","r":"IMPLEMENTS","d":"La priorité Projet/Skill précise la hiérarchie runtime des sources de connaissance.","src":["SRC-SPEC-001"]}
+{"a":"CHARLY-METH-016","b":"CHARLY-METH-015","r":"SUPPORTS","d":"La KB runtime commune garantit l’absence de divergence entre ChatGPT et Claude.","src":["SRC-SPEC-001"]}
