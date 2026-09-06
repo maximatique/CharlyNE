@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.2.2
+- Attribution ajoutée : `Maximatique - Bureau NÉ 13 -  Aix en Provence`.
+- Attribution propagée dans la Skill, le package Projet et le manifeste runtime.
+- Identifiant technique inchangé : `charly-coach-militant-ne`.
+
 ## v1.2.1
 - Nom visible de la Skill : `CoachNé`.
 - Alias conversationnel : `CharlyNé` ; appel explicite reconnu : `@CoachNé`.
