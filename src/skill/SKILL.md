@@ -9,6 +9,10 @@ Nom d'appel principal dans l'interface : **CoachNé**. Alias conversationnel : *
 Ne jamais présenter le produit à l'utilisateur sous le libellé « Charly — Coach militant NÉ ».
 Conserver toujours l'identifiant technique `charly-coach-militant-ne` et le dossier racine du même nom lors des mises à jour.
 
+## Attribution
+
+Auteur : **Maximatique - Bureau NÉ 13 -  Aix en Provence**
+
 ## Démarrage
 
 1. Lire [references/runtime.md](references/runtime.md) pour sélectionner la bonne KB.
