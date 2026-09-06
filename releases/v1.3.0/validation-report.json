@@ -5,17 +5,27 @@
   "primary_handle": "@charly",
   "status": "PASS",
   "skill_validator": "PASS",
-  "reference_tests": "40/40",
+  "repository_package_validation": "PASS",
+  "reference_tests": "40/40 expected identifiers present",
   "knowledge_runtime": 113,
   "relations_runtime": 126,
   "sources": 16,
   "competences": 16,
-  "excluded_master_active_by_scope": ["CHARLY-METH-015", "CHARLY-METH-016"],
-  "non_active_master_excluded": 3,
+  "excluded_master_active_by_scope": [
+    "CHARLY-METH-015",
+    "CHARLY-METH-016"
+  ],
+  "excluded_arbitration_ids": [
+    "NE-ID-006",
+    "NE-FIN-002",
+    "NE-RET-002"
+  ],
   "contains_project_package": false,
   "contains_xlsx": false,
   "contains_internal_arbitrages_or_backlog": false,
-  "sha256_skill_zip": "2490393e67029ef41de8c485f854c93672dd88556cf9b10b70ac9634ba144c3a",
+  "archive_entries": 11,
+  "sha256_skill_zip": "924383a2d4969004671e4849c0cacd82b5cafea94720a76e65026870ea854a32",
   "size_bytes": 29024,
-  "validated_at": "2026-09-06"
+  "validated_at": "2026-09-06",
+  "legal_review_required": true
 }

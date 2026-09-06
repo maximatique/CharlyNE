@@ -36,13 +36,20 @@ Les fiches Éducation, Sécurité, Justice, Immigration, Nucléaire, Europe, Inn
 
 Le fichier `skill.zip` est le package d’installation. Il contient une seule Skill, avec `SKILL.md`, les métadonnées ChatGPT et la KB autonome sous `references/kb/`. Aucun XLS/XLSX, arbitrage interne, backlog ou package Projet n’est distribué.
 
-## Validation
+Le même binaire est publié à deux emplacements :
+- `/skill.zip`
+- `/releases/v1.3.0/skill.zip`
+
+## Validation finale
 
 - Validateur Skill : PASS
 - Contrôles structurels et référentiels : PASS
 - Tests de référence : 40/40 identifiants attendus présents dans le runtime
 - Nom visible `CharlyNé` vérifié
 - Identité technique stable vérifiée
-- Taille du package inférieure à 25 MiB
+- 11 fichiers, racine unique `charly-coach-militant-ne/`
+- Taille : 29 024 octets
+- SHA-256 : `924383a2d4969004671e4849c0cacd82b5cafea94720a76e65026870ea854a32`
+- Build reproductible via `scripts/build_skill_release.py`
 
 La relecture juridique prévue par la spécification reste une étape de gouvernance distincte de la validation technique de la Skill.

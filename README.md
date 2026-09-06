@@ -34,7 +34,7 @@ Les principaux enrichissements concernent la décentralisation et les Provinces,
 
 ### Méthode recommandée — `skill.zip`
 
-1. Télécharger `releases/v1.3.0/skill.zip` depuis ce dépôt.
+1. Télécharger **[`skill.zip`](./skill.zip)** depuis la racine de ce dépôt. Le même binaire versionné est conservé dans [`releases/v1.3.0/skill.zip`](./releases/v1.3.0/skill.zip).
 2. Dans ChatGPT : ouvrir **Plugins > Compétences > Créer > Importer depuis votre ordinateur**, puis sélectionner `skill.zip`.
 3. Dans Claude.ai : ouvrir **Settings > Capabilities > Skills**, puis importer le même `skill.zip`.
 
@@ -50,10 +50,20 @@ Cette forme dépend des capacités disponibles dans le produit et de ses accès 
 
 L’archive conserve le dossier racine `charly-coach-militant-ne/` et le champ `name: charly-coach-militant-ne`. Le nom visible reste **CharlyNé**. Les mises à jour doivent conserver cette identité technique afin d’éviter la création d’une Skill parallèle.
 
+## Intégrité du package
+
+- Taille : **29 024 octets**
+- SHA-256 : `924383a2d4969004671e4849c0cacd82b5cafea94720a76e65026870ea854a32`
+- 11 fichiers dans une racine unique `charly-coach-militant-ne/`
+- package racine et package versionné strictement identiques
+
+Le rapport détaillé est disponible dans [`releases/v1.3.0/validation-report.json`](./releases/v1.3.0/validation-report.json).
+
 ## Structure
 
 - `src/skill/` : source de la Skill autonome.
 - `src/kb/` : KB runtime canonique générée depuis l’ontologie maître.
+- `scripts/build_skill_release.py` : reconstruction déterministe et contrôles de la release.
 - `tests/reference_tests.jsonl` : tests de référence de la release courante.
 - `releases/v1.3.0/` : package installable, notes et rapport de validation.
 - `src/project/` : historique conservé ; hors périmètre de la release v1.3.0.
