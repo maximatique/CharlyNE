@@ -12,18 +12,22 @@ Le drapeau `legal_review_required` reste présent dans le manifeste runtime conf
 - 30/30 tests de référence passés.
 - 0 erreur de validation runtime.
 - JSON/JSONL valides.
-- Archives ZIP valides.
-- KB Projet et fallback Skill identiques octet par octet.
+- Archives ZIP de distribution validées hors dépôt.
+- KB Projet et fallback Skill identiques octet par octet dans le build validé.
 - Aucun XLS/XLSX, arbitrage, backlog ou journal interne dans les packages.
 - Scan de secrets sur les sources de distribution : aucun motif détecté.
 
-## Artefacts
+## Contenu du dépôt
 
-- `skill.zip` — Skill ChatGPT/Codex autonome.
-- `charly-project-gpt-claude-v1.2.zip` — package Projet commun ChatGPT / Claude.
+- `src/skill/` — sources de l’adaptateur Skill ChatGPT/Codex.
+- `src/project/` — sources des adaptateurs Projet ChatGPT / Claude.
+- `src/kb/` — KB runtime canonique commune ; `charly_knowledge.jsonl` est stocké compressé en `.gz`.
+- `tests/reference_tests.jsonl` — jeu de 30 tests de référence.
 - `validation-report.json` — rapport de validation déterministe.
 
-## Empreintes
+Les archives binaires de distribution ne sont pas commitées dans ce dépôt. Elles sont générées à partir de la même source validée.
+
+## Empreintes des artefacts validés
 
 - `skill.zip` : `0ea86e6a165c03de4fb37de06edaeba8c5c0f68b8d0a3d8a795e6fa5f42e9f46`
 - `charly-project-gpt-claude-v1.2.zip` : `c2ff6bb63c843bfb409c031d8c428a555e63557e51cdc9ebfa8d74fb51c81f18`
