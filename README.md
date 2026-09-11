@@ -4,41 +4,48 @@ Dépôt de distribution et de versioning de **CharlyNé**.
 
 ## Version courante
 
-- Release : **v1.3.0**
+- Release de distribution : **v1.3.1**
+- KB logique : **v1.3.0**
 - Nom visible : **CharlyNé**
 - Handle principal : `@charly`
 - Alias : `@charlyné`, `CoachNé`, `Lisnardassistant`, `assitantné`, `Charlyne`, `coachmilitant`
-- Identifiant technique immuable : `charly-coach-militant-ne`
+- Identifiant technique immuable de la Skill : `charly-coach-militant-ne`
 - Spécification : v1.2
 - Ontologie logique : **0.3.0**
-- Package distribué : **Skill autonome** ChatGPT / Claude
 - Auteur : Maximatique - Bureau NÉ 13 -  Aix en Provence
 
-## Release v1.3.0
+## Choisir son mode d’installation
 
-Cette version met de côté le packaging Projet et distribue une Skill autonome contenant sa KB runtime sous `references/kb/`.
+### Option la plus simple — Projet par plateforme
 
-- 118 objets dans l’ontologie maître
-- 115 objets `ACTIVE`
-- 3 objets `ARBITRATION_REQUIRED` exclus du runtime
-- 2 méthodes techniques liées au mode Projet exclues du périmètre de cette release
-- 113 connaissances actives embarquées
-- 126 relations runtime
-- 16 sources actives
-- 16 compétences actives
-- 40 tests de référence
+Pour les utilisateurs qui ne maîtrisent pas les Skills, utiliser le package correspondant à la plateforme :
 
-Les principaux enrichissements concernent la décentralisation et les Provinces, l’écologie bas carbone, la politique sociale, la sécurité et la justice, l’immigration, la souveraineté technologique, la défense, la dissuasion et la doctrine internationale.
+- **ChatGPT** : [`releases/v1.3.1/charly-chatgpt-project.zip`](./releases/v1.3.1/charly-chatgpt-project.zip)
+- **Claude** : [`releases/v1.3.1/charly-claude-project.zip`](./releases/v1.3.1/charly-claude-project.zip)
+- **Gemini** : [`releases/v1.3.1/charly-gemini-project.zip`](./releases/v1.3.1/charly-gemini-project.zip)
 
-## Installation ChatGPT / Claude
+Procédure :
 
-### Méthode recommandée — `skill.zip`
+1. Télécharger l’archive depuis un ordinateur.
+2. La décompresser.
+3. Créer un Projet ChatGPT, un Projet Claude ou un Gem Gemini.
+4. Copier le contenu de `INSTRUCTIONS.md` dans les instructions du Projet/Gem.
+5. Ajouter les six fichiers du dossier `kb/` à la connaissance du Projet/Gem.
+6. Commencer à utiliser CharlyNé.
 
-1. Télécharger **[`skill.zip`](./skill.zip)** depuis la racine de ce dépôt. Le même binaire versionné est conservé dans [`releases/v1.3.0/skill.zip`](./releases/v1.3.0/skill.zip).
-2. Dans ChatGPT : ouvrir **Plugins > Compétences > Créer > Importer depuis votre ordinateur**, puis sélectionner `skill.zip`.
-3. Dans Claude.ai : ouvrir **Settings > Capabilities > Skills**, puis importer le même `skill.zip`.
+Une fois le Projet configuré, il peut ensuite être utilisé normalement depuis mobile.
 
-Cette méthode est la méthode de distribution de référence pour cette release.
+Les trois packages Projet embarquent exactement la même KB. Seules les instructions d’adaptation à la plateforme diffèrent.
+
+### Option avancée — Skill autonome
+
+La Skill autonome reste disponible pour les environnements qui permettent son import :
+
+1. Télécharger [`skill.zip`](./skill.zip).
+2. Importer l’archive dans la section Skills de la plateforme.
+3. Utiliser CharlyNé avec `@charly`.
+
+Le binaire de Skill de la release v1.3.1 est inchangé par rapport à v1.3.0 ; cette release ajoute principalement les packages Projet.
 
 ### Installation depuis l’URL du dépôt
 
@@ -46,28 +53,46 @@ Vous pouvez également essayer dans un chat :
 
 `Installe la skill https://github.com/maximatique/CharlyNE`
 
-Cette forme dépend des capacités disponibles dans le produit et de ses accès au dépôt ; elle ne doit pas être considérée comme la méthode garantie d’installation. Si l’installation directe depuis l’URL n’est pas proposée, utiliser `skill.zip`.
+Cette forme dépend des capacités disponibles dans le produit et de ses accès au dépôt ; elle ne doit pas être considérée comme une méthode garantie d’installation.
 
-L’archive conserve le dossier racine `charly-coach-militant-ne/` et le champ `name: charly-coach-militant-ne`. Le nom visible reste **CharlyNé**. Les mises à jour doivent conserver cette identité technique afin d’éviter la création d’une Skill parallèle.
+## Contenu de la KB
 
-## Intégrité du package
+La KB runtime courante contient :
 
-- Taille : **29 024 octets**
-- SHA-256 : `924383a2d4969004671e4849c0cacd82b5cafea94720a76e65026870ea854a32`
-- 11 fichiers dans une racine unique `charly-coach-militant-ne/`
-- package racine et package versionné strictement identiques
+- 113 connaissances actives embarquées ;
+- 126 relations runtime ;
+- 16 sources actives ;
+- 16 compétences actives ;
+- 40 tests de référence pour la Skill.
 
-Le rapport détaillé est disponible dans [`releases/v1.3.0/validation-report.json`](./releases/v1.3.0/validation-report.json).
+Les éléments `ARBITRATION_REQUIRED` restent exclus du runtime public.
+
+## Release v1.3.1
+
+Cette version ajoute :
+
+- un package Projet ChatGPT ;
+- un package Projet Claude ;
+- un package Gem Gemini ;
+- un adaptateur Gemini ;
+- un build déterministe des trois packages ;
+- un rapport de validation vérifiant que la KB est identique entre les plateformes.
+
+La doctrine et la KB logique ne changent pas par rapport à v1.3.0.
+
+Voir [`releases/v1.3.1/RELEASE.md`](./releases/v1.3.1/RELEASE.md).
 
 ## Structure
 
 - `src/skill/` : source de la Skill autonome.
 - `src/kb/` : KB runtime canonique générée depuis l’ontologie maître.
-- `scripts/build_skill_release.py` : reconstruction déterministe et contrôles de la release.
-- `tests/reference_tests.jsonl` : tests de référence de la release courante.
-- `releases/v1.3.0/` : package installable, notes et rapport de validation.
-- `src/project/` : historique conservé ; hors périmètre de la release v1.3.0.
+- `src/project/` : socle et adaptateurs Projet ChatGPT / Claude / Gemini.
+- `scripts/build_skill_release.py` : reconstruction déterministe de la Skill.
+- `scripts/build_project_releases.py` : génération des trois packages Projet.
+- `tests/reference_tests.jsonl` : tests de référence.
+- `releases/v1.3.0/` : release Skill précédente.
+- `releases/v1.3.1/` : release multi-plateforme Projet.
 
 ## Fiabilité
 
-La doctrine et les connaissances politiques sont produites depuis la chaîne de vérité du Studio. Les éléments `ARBITRATION_REQUIRED` restent exclus du runtime. La validation technique du package ne remplace pas la relecture juridique prévue par la spécification.
+La doctrine et les connaissances politiques sont produites depuis la chaîne de vérité du Studio. Les packages de plateforme ne doivent jamais maintenir des KB divergentes. La validation technique ne remplace pas la relecture juridique prévue par la spécification.
