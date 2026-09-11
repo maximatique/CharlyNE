@@ -1,0 +1,50 @@
+{
+  "release": "v1.3.1",
+  "status": "PASS",
+  "distribution_change": "platform-specific project packages added",
+  "kb_logical_version": "1.3.0",
+  "ontology_version": "0.3.0",
+  "knowledge_runtime": 113,
+  "packages": [
+    {
+      "platform": "chatgpt",
+      "file": "charly-chatgpt-project.zip",
+      "size_bytes": 27531,
+      "sha256": "ede3d7e804ea807ab036db308d09528445ff5f02c8f54df61f0b9c4953e361d7",
+      "entries": 8
+    },
+    {
+      "platform": "claude",
+      "file": "charly-claude-project.zip",
+      "size_bytes": 27643,
+      "sha256": "e5cfbd7a9c47ede0bd8edb803b367de7e07ad67f9edd72aea2aeb3ccb50d6a4b",
+      "entries": 8
+    },
+    {
+      "platform": "gemini",
+      "file": "charly-gemini-project.zip",
+      "size_bytes": 27627,
+      "sha256": "65c85828ab36c1e89b9a889b932aa9c2ea983473085f619190acbc5a6f4d9eaf",
+      "entries": 8
+    },
+    {
+      "platform": "skill",
+      "file": "skill.zip",
+      "size_bytes": 29024,
+      "sha256": "924383a2d4969004671e4849c0cacd82b5cafea94720a76e65026870ea854a32",
+      "entries": 11
+    }
+  ],
+  "shared_kb_hashes": {
+    "charly_competences.jsonl": "4164ad1e665bdb4f6e9a2347d2187034b37e6621c8bb46b1ea0177a4a7009663",
+    "charly_kb_manifest.json": "e123617ba2561a90f5c2b53f8b6c8b038e03dfa5c57fcc0340492bfd470c150f",
+    "charly_relations.jsonl": "625e2c939fb3c14ba3bfaebc67561d6442b6429086f17e3d3363efcadc7711ce",
+    "charly_schema.json": "4d962d7cb827c81ac1332c725a0c2115d135c0a09fa5caa814bd6c721d1676c7",
+    "charly_sources.jsonl": "8af2676ecfea34d4977c9dc4efe7a9ed32060a6b4055ff5f1a663a7eaadf8251",
+    "charly_knowledge.jsonl": "cdf0510dfbec931313748471280c98f2f016bf1120eea1c8fb866db42ac4be07"
+  },
+  "same_kb_across_project_packages": true,
+  "skill_runtime_changed": false,
+  "legal_review_required": true,
+  "validated_at": "2026-09-11"
+}
