@@ -1,0 +1,66 @@
+name: Build multi-platform project releases
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/project/**'
+      - 'src/kb/**'
+      - 'scripts/build_project_releases.py'
+      - '.github/workflows/build-project-releases.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-verify:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build project packages
+        run: python scripts/build_project_releases.py
+
+      - name: Verify project packages
+        run: |
+          for f in \
+            releases/v1.3.1/charly-chatgpt-project.zip \
+            releases/v1.3.1/charly-claude-project.zip \
+            releases/v1.3.1/charly-gemini-project.zip; do
+            unzip -t "$f"
+            test "$(unzip -Z1 "$f" | wc -l)" -eq 8
+          done
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('releases/v1.3.1/project-validation-report.json')
+          r=json.loads(p.read_text(encoding='utf-8'))
+          assert r['status']=='PASS'
+          assert r['same_kb_across_project_packages'] is True
+          assert r['skill_runtime_changed'] is False
+          PY
+
+      - name: Publish generated packages
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            releases/v1.3.1/charly-chatgpt-project.zip \
+            releases/v1.3.1/charly-claude-project.zip \
+            releases/v1.3.1/charly-gemini-project.zip \
+            releases/v1.3.1/skill.zip \
+            releases/v1.3.1/project-validation-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Build validated v1.3.1 project packages [skip ci]'
+            git push
+          fi
