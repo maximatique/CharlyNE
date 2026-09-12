@@ -28,12 +28,13 @@ def main():
 
     rel=[x for x in jl(K/'charly_relations.jsonl') if x.get('a') in ids and x.get('b') in ids]
     rel += jl(K/'charly_relations_patch_v1.4.0.jsonl')
+    allowed=set(json.loads((K/'charly_relation_keys_v1.4.0.json').read_text(encoding='utf-8')))
     seen=set(); out=[]
     for x in rel:
-        key=(x.get('a'),x.get('b'),x.get('r'))
-        if key not in seen and x.get('a') in ids and x.get('b') in ids:
+        key=(x.get('a'),x.get('b'),x.get('r')); sk='|'.join(key)
+        if sk in allowed and key not in seen and x.get('a') in ids and x.get('b') in ids:
             seen.add(key); out.append(x)
-    if len(out)!=126: raise SystemExit(f'relation count {len(out)} != 126')
+    if len(out)!=126 or set('|'.join((x['a'],x['b'],x['r'])) for x in out)!=allowed: raise SystemExit(f'relation allowlist mismatch: {len(out)}')
     dump(K/'charly_relations.jsonl',out)
 
     src=jl(K/'charly_sources.jsonl'); patches=jl(K/'charly_sources_patch_v1.4.0.jsonl')
