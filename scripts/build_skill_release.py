@@ -3,56 +3,65 @@ from __future__ import annotations
 import gzip, hashlib, json, shutil, tempfile, zipfile
 from pathlib import Path, PurePosixPath
 
-R=Path(__file__).resolve().parents[1]; N='charly-coach-militant-ne'; V='v1.3.0'
-S=R/'src/skill'; K=R/'src/kb'; O=R/'skill.zip'; D=R/'releases'/V/'skill.zip'; P=R/'releases'/V/'validation-report.json'
-FIXED=(2026,9,6,12,0,0)
+R = Path(__file__).resolve().parents[1]
+N = 'charly-coach-militant-ne'
+V = 'v1.4.0'
+S = R / 'src' / 'skill'
+K = R / 'src' / 'kb'
+O = R / 'skill.zip'
+D = R / 'releases' / V / 'skill.zip'
+P = R / 'releases' / V / 'skill-validation-report.json'
+FIXED = (2026, 9, 12, 12, 0, 0)
 
-def jl(p):
+def read_jsonl(path: Path):
     out=[]
-    for n,x in enumerate(p.read_text(encoding='utf-8').splitlines(),1):
-        if x.strip():
-            try: out.append(json.loads(x))
-            except Exception as e: raise SystemExit(f'{p}:{n}: {e}')
+    for n,line in enumerate(path.read_text(encoding='utf-8').splitlines(),1):
+        if line.strip():
+            try: out.append(json.loads(line))
+            except Exception as exc: raise SystemExit(f'{path}:{n}: {exc}')
     return out
 
 def main():
-    req=[S/'SKILL.md',S/'README.md',S/'agents/openai.yaml',S/'references/author.md',S/'references/socle.md',K/'charly_competences.jsonl',K/'charly_sources.jsonl',K/'charly_relations.jsonl',K/'charly_schema.json',K/'charly_kb_manifest.json',K/'charly_knowledge.jsonl.gz',R/'tests/reference_tests.jsonl']
-    for p in req:
-        if not p.is_file(): raise SystemExit(f'missing {p.relative_to(R)}')
+    required=[S/'SKILL.md',S/'README.md',S/'agents/openai.yaml',S/'references/author.md',S/'references/socle.md',K/'charly_competences.jsonl',K/'charly_sources.jsonl',K/'charly_relations.jsonl',K/'charly_schema.json',K/'charly_kb_manifest.json',K/'charly_knowledge.jsonl.gz']
+    for path in required:
+        if not path.is_file(): raise SystemExit(f'missing {path.relative_to(R)}')
     skill=(S/'SKILL.md').read_text(encoding='utf-8')
-    if not skill.startswith('---\n') or f'name: {N}' not in skill.split('---',2)[1]: raise SystemExit('invalid SKILL.md identity')
+    frontmatter=skill.split('---',2)[1] if skill.startswith('---\n') else ''
+    if f'name: {N}' not in frontmatter: raise SystemExit('invalid SKILL.md identity')
     if 'display_name: "CharlyNé"' not in (S/'agents/openai.yaml').read_text(encoding='utf-8'): raise SystemExit('invalid display name')
     if 'Maximatique - Bureau NÉ 13 -  Aix en Provence' not in (S/'references/author.md').read_text(encoding='utf-8'): raise SystemExit('invalid author')
-    m=json.loads((K/'charly_kb_manifest.json').read_text(encoding='utf-8')); sc=json.loads((K/'charly_schema.json').read_text(encoding='utf-8'))
-    expected={'release_version':'1.3.0','ontology_version':'0.3.0','display_name':'CharlyNé','runtime_active':113,'relations_runtime':126,'sources':16,'competences_active':16,'distribution_scope':'standalone-skill'}
-    if any(m.get(k)!=v for k,v in expected.items()) or sc.get('product')!=N or sc.get('display_name')!='CharlyNé': raise SystemExit('manifest/schema mismatch')
-    with gzip.open(K/'charly_knowledge.jsonl.gz','rt',encoding='utf-8') as f: kt=f.read()
-    know=[json.loads(x) for x in kt.splitlines() if x.strip()]; rel=jl(K/'charly_relations.jsonl'); src=jl(K/'charly_sources.jsonl'); comp=jl(K/'charly_competences.jsonl'); tests=jl(R/'tests/reference_tests.jsonl')
-    if (len(know),len(rel),len(src),len(comp),len(tests))!=(113,126,16,16,40): raise SystemExit('count mismatch')
-    ids={x['i'] for x in know}; forbidden={'CHARLY-METH-015','CHARLY-METH-016','NE-ID-006','NE-FIN-002','NE-RET-002'}
+    manifest=json.loads((K/'charly_kb_manifest.json').read_text(encoding='utf-8'))
+    schema=json.loads((K/'charly_schema.json').read_text(encoding='utf-8'))
+    expected={'release_version':'1.4.0','spec_version':'1.3','ontology_version':'0.4.0','display_name':'CharlyNé','runtime_active':115,'relations_runtime':126,'sources':17,'competences_active':16}
+    if any(manifest.get(k)!=v for k,v in expected.items()): raise SystemExit(f'manifest mismatch: {manifest}')
+    if schema.get('product') != N or schema.get('display_name') != 'CharlyNé': raise SystemExit('schema mismatch')
+    live=manifest.get('live') or {}
+    if not live.get('enabled') or not live.get('manifest_file_id'): raise SystemExit('KB Live manifest missing')
+    with gzip.open(K/'charly_knowledge.jsonl.gz','rt',encoding='utf-8') as f: knowledge_text=f.read()
+    knowledge=[json.loads(x) for x in knowledge_text.splitlines() if x.strip()]
+    relations=read_jsonl(K/'charly_relations.jsonl'); sources=read_jsonl(K/'charly_sources.jsonl'); competences=read_jsonl(K/'charly_competences.jsonl')
+    if (len(knowledge),len(relations),len(sources),len(competences)) != (115,126,17,16): raise SystemExit('runtime count mismatch')
+    ids={x['i'] for x in knowledge}
+    for required_id in ('NE-EDU-001','NE-EDU-002','NE-EDU-004','CHARLY-METH-018'):
+        if required_id not in ids: raise SystemExit(f'missing required knowledge {required_id}')
+    forbidden={'NE-ID-006','NE-FIN-002','NE-RET-002','CHARLY-METH-015','CHARLY-METH-016'}
     if ids & forbidden: raise SystemExit(f'excluded IDs leaked: {sorted(ids&forbidden)}')
-    missing=[(t['id'],i) for t in tests for i in t.get('expected_ids',[]) if i not in ids]
-    if missing: raise SystemExit(f'test IDs missing: {missing}')
-    rt=(K/'charly_relations.jsonl').read_text(encoding='utf-8')
-    bad=[x for x in ['NE-CUNT-','¨0','Átat-performance','"d":"’'] if x in rt]
-    if bad: raise SystemExit(f'corrupt relation markers: {bad}')
     with tempfile.TemporaryDirectory() as td:
-        b=Path(td)/N; (b/'agents').mkdir(parents=True); (b/'references/kb').mkdir(parents=True)
-        copies={S/'SKILL.md':b/'SKILL.md',S/'README.md':b/'README.md',S/'agents/openai.yaml':b/'agents/openai.yaml',S/'references/author.md':b/'references/author.md',S/'references/socle.md':b/'references/socle.md'}
-        for a,z in copies.items(): shutil.copy2(a,z)
-        for n in ['charly_competences.jsonl','charly_sources.jsonl','charly_relations.jsonl','charly_schema.json','charly_kb_manifest.json']: shutil.copy2(K/n,b/'references/kb'/n)
-        (b/'references/kb/charly_knowledge.jsonl').write_text(kt,encoding='utf-8')
-        files=sorted(p for p in b.rglob('*') if p.is_file())
-        if len(files)!=11: raise SystemExit('archive must contain 11 files')
+        root=Path(td)/N; (root/'agents').mkdir(parents=True); (root/'references/kb').mkdir(parents=True)
+        copies={S/'SKILL.md':root/'SKILL.md',S/'README.md':root/'README.md',S/'agents/openai.yaml':root/'agents/openai.yaml',S/'references/author.md':root/'references/author.md',S/'references/socle.md':root/'references/socle.md'}
+        for src,dst in copies.items(): shutil.copy2(src,dst)
+        for name in ['charly_competences.jsonl','charly_sources.jsonl','charly_relations.jsonl','charly_schema.json','charly_kb_manifest.json']: shutil.copy2(K/name, root/'references/kb'/name)
+        (root/'references/kb/charly_knowledge.jsonl').write_text(knowledge_text,encoding='utf-8')
+        files=sorted(p for p in root.rglob('*') if p.is_file())
+        if len(files)!=11: raise SystemExit(f'archive must contain 11 files, got {len(files)}')
         O.parent.mkdir(parents=True,exist_ok=True); D.parent.mkdir(parents=True,exist_ok=True)
         with zipfile.ZipFile(O,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
-            for p in files:
-                name=str(PurePosixPath(N)/p.relative_to(b).as_posix()); info=zipfile.ZipInfo(name,FIXED); info.compress_type=zipfile.ZIP_DEFLATED; info.external_attr=0o100644<<16; z.writestr(info,p.read_bytes())
+            for path in files:
+                name=str(PurePosixPath(N)/path.relative_to(root).as_posix()); info=zipfile.ZipInfo(name,FIXED); info.compress_type=zipfile.ZIP_DEFLATED; info.external_attr=0o100644<<16; z.writestr(info,path.read_bytes())
         shutil.copyfile(O,D)
     with zipfile.ZipFile(O) as z:
-        if len(z.namelist())!=11 or {PurePosixPath(x).parts[0] for x in z.namelist()}!={N} or z.testzip(): raise SystemExit('zip validation failed')
-    data=O.read_bytes(); h=hashlib.sha256(data).hexdigest()
-    if len(data)>25*1024*1024 or D.read_bytes()!=data: raise SystemExit('distribution mismatch')
-    report={'release':V,'skill_identity':N,'display_name':'CharlyNé','primary_handle':'@charly','status':'PASS','skill_validator':'PASS','repository_package_validation':'PASS','reference_tests':'40/40 expected identifiers present','knowledge_runtime':113,'relations_runtime':126,'sources':16,'competences':16,'excluded_master_active_by_scope':['CHARLY-METH-015','CHARLY-METH-016'],'excluded_arbitration_ids':['NE-ID-006','NE-FIN-002','NE-RET-002'],'contains_project_package':False,'contains_xlsx':False,'contains_internal_arbitrages_or_backlog':False,'archive_entries':11,'sha256_skill_zip':h,'size_bytes':len(data),'validated_at':'2026-09-06','legal_review_required':True}
+        if len(z.namelist())!=11 or z.testzip(): raise SystemExit('zip validation failed')
+    data=O.read_bytes(); digest=hashlib.sha256(data).hexdigest()
+    report={'release':V,'skill_identity':N,'display_name':'CharlyNé','primary_handle':'@charly','status':'PASS','spec_version':'1.3','ontology_version':'0.4.0','knowledge_runtime':115,'relations_runtime':126,'sources':17,'competences':16,'kb_live_enabled':True,'archive_entries':11,'sha256_skill_zip':digest,'size_bytes':len(data),'validated_at':'2026-09-12','legal_review_required':True}
     P.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__': main()

@@ -1,26 +1,17 @@
 # Changelog
 
-## v1.2.2
-- Attribution ajoutée : `Maximatique - Bureau NÉ 13 -  Aix en Provence`.
-- Attribution propagée dans la Skill, le package Projet et le manifeste runtime.
-- Identifiant technique inchangé : `charly-coach-militant-ne`.
+## v1.4.0 — 2026-09-12
+- Spécification 1.3 et ontologie logique 0.4.0.
+- Ajout de l'architecture KB Core + KB Live distante.
+- Consultation Live ciblée via `manifest.json` pour Presse et Agenda lorsque la plateforme peut accéder à la source.
+- Règle : Live complète Core sans la remplacer silencieusement ; contradiction = arbitrage, pas fusion automatique.
+- Intégration de la tribune JDD du 11 septembre 2026 sur l'école.
+- `NE-EDU-001` et `NE-EDU-002` enrichies ; `NE-EDU-004` créée.
+- Ajout de `CHARLY-METH-018`.
+- Packages ChatGPT, Claude, Gemini, Universal Markdown et Skill régénérés depuis la même KB Core.
 
-## v1.2.1
-- Nom visible de la Skill : `CoachNé`.
-- Alias conversationnel : `CharlyNé` ; appel explicite reconnu : `@CoachNé`.
-- Identifiant technique et dossier racine conservés : `charly-coach-militant-ne`.
-- Mise à jour conçue pour remplacer l'installation existante sans créer une seconde identité de Skill.
-- Validation interne de la release ; l'indicateur `legal_review_required` reste inchangé.
+## v1.3.1
+- Ajout des packages Projet ChatGPT, Claude et Gemini à partir d'une KB commune.
 
-## v1.2
-- KB runtime compacte en JSON/JSONL minifié.
-- Package Projet de connaissance commun à ChatGPT et Claude.
-- Priorité intégrale de la KB Projet sur le fallback de la Skill ChatGPT.
-- Interdiction de fusionner deux versions de KB.
-
-## v1.1 repris dans ce build
-- Non-invention étendue aux tiers et critiques de personnes encadrées.
-- Cadre légal, calendrier NE-CAL-01 et règles de silence électoral.
-- Sourcing obligatoire des faits et chiffres.
-- Étiquetage public des médias IA lorsque requis.
-- Jeu de tests de référence bloquant.
+## v1.3.0
+- Skill autonome validée et identité canonique `charly-coach-militant-ne` stabilisée.

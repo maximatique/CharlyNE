@@ -1,11 +1,14 @@
-name: Build multi-platform project releases
+name: Build CharlyNé v1.4.0 release
 
 on:
   push:
     branches: [main]
     paths:
-      - 'src/project/**'
+      - 'src/skill/**'
       - 'src/kb/**'
+      - 'src/project/**'
+      - 'scripts/materialize_v140_runtime.py'
+      - 'scripts/build_skill_release.py'
       - 'scripts/build_project_releases.py'
       - '.github/workflows/build-project-releases.yml'
   workflow_dispatch:
@@ -18,49 +21,39 @@ jobs:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
+      - name: Materialize v1.4.0 runtime from release delta
+        run: python scripts/materialize_v140_runtime.py
+      - name: Build Skill
+        run: python scripts/build_skill_release.py
       - name: Build project packages
         run: python scripts/build_project_releases.py
-
-      - name: Verify project packages
+      - name: Verify packages
         run: |
-          for f in \
-            releases/v1.3.1/charly-chatgpt-project.zip \
-            releases/v1.3.1/charly-claude-project.zip \
-            releases/v1.3.1/charly-gemini-project.zip; do
+          unzip -t releases/v1.4.0/skill.zip
+          for f in releases/v1.4.0/charly-chatgpt-project.zip releases/v1.4.0/charly-claude-project.zip releases/v1.4.0/charly-gemini-project.zip releases/v1.4.0/charly-universal-project.zip; do
             unzip -t "$f"
             test "$(unzip -Z1 "$f" | wc -l)" -eq 8
           done
           python - <<'PY'
           import json
           from pathlib import Path
-          p=Path('releases/v1.3.1/project-validation-report.json')
-          r=json.loads(p.read_text(encoding='utf-8'))
+          r=json.loads(Path('releases/v1.4.0/project-validation-report.json').read_text(encoding='utf-8'))
           assert r['status']=='PASS'
-          assert r['same_kb_across_project_packages'] is True
-          assert r['skill_runtime_changed'] is False
+          assert r['same_core_kb_across_project_packages'] is True
+          assert r['kb_live_enabled'] is True
           PY
-
-      - name: Publish generated packages
+      - name: Publish validated runtime and packages
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add \
-            releases/v1.3.1/charly-chatgpt-project.zip \
-            releases/v1.3.1/charly-claude-project.zip \
-            releases/v1.3.1/charly-gemini-project.zip \
-            releases/v1.3.1/skill.zip \
-            releases/v1.3.1/project-validation-report.json
+          git add src/kb/charly_knowledge.jsonl.gz src/kb/charly_relations.jsonl src/kb/charly_sources.jsonl src/kb/charly_kb_manifest.json skill.zip releases/v1.4.0
           if ! git diff --cached --quiet; then
-            git commit -m 'Build validated v1.3.1 project packages [skip ci]'
+            git commit -m 'Build validated v1.4.0 release [skip ci]'
             git push
           fi

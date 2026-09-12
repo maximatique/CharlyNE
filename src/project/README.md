@@ -1,24 +1,11 @@
-# Charly — package Projet commun ChatGPT / Claude
+# CharlyNé — packages Projet v1.4.0
 
-- Spécification : v1.2
-- Release package : v1.2.3
-- Ontologie logique : 0.2.0
-- Généré : 2026-09-06
-- Fiches actives : 98
+- Spécification : v1.3
+- Release : v1.4.0
+- Ontologie logique : 0.4.0
+- Généré : 2026-09-12
+- KB runtime : 115 connaissances actives, 126 relations, 17 sources, 16 compétences
+- KB Live distante : Presse + Agenda via `manifest.json`
 - Auteur : Maximatique - Bureau NÉ 13 -  Aix en Provence
 
-Le dossier `kb/` est identique pour ChatGPT et Claude. Charger le même package de connaissance dans les deux plateformes ; seuls `CHATGPT_INSTRUCTIONS.md` et `CLAUDE.md` sont des adaptateurs. Aucun fichier XLS/XLSX, arbitrage interne, backlog ou journal de travaux n'est inclus.
-
-## Invocation
-
-- Handle principal : `@charly`.
-- Alias : `@charlyné`, `CoachNé`, `Lisnardassistant`, `assitantné`, `Charlyne`, `coachmilitant`.
-- Reconnaître ces formes comme des appels équivalents ; le handle canonique reste `@charly`.
-
-## Identité de Skill et mises à jour
-
-- Nom visible : `CoachNé`.
-- Identifiant technique immuable : `charly-coach-militant-ne`.
-- Toute nouvelle release doit conserver le même champ `name` dans `SKILL.md` et le même dossier racine `charly-coach-militant-ne/`.
-- Les handles et alias ne doivent jamais servir de nouveau `name` technique.
-- Ne pas publier une seconde archive avec un identifiant technique différent : une telle archive serait une nouvelle Skill, pas une mise à jour.
+Les packages ChatGPT, Claude, Gemini et Universal Markdown utilisent exactement la même KB Core. Seules les instructions d'adaptation à la plateforme diffèrent.
