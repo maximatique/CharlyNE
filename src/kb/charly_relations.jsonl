@@ -113,9 +113,6 @@
 {"a":"NE-STATE-006","b":"NE-DOC-005","r":"IMPLEMENTS","d":"La mesure vise un État recentré sur les fonctions opérationnelles.","src":["SRC-FAQ-2026"]}
 {"a":"NE-SEC-003","b":"NE-PROG-001","r":"PART_OF","d":"La lutte contre l’islamisme radical est distinguée dans le programme de sécurité.","src":["SRC-PROG-2026"]}
 {"a":"NE-JUS-002","b":"NE-PROG-001","r":"PART_OF","d":"La justice des mineurs relève du programme régalien.","src":["SRC-PROG-2026"]}
-{"a":"NE-TECH-001","b":"NE-PROG-001","r":"PART_OF","d":"La souveraineté technologique relève du projet de puissance.","src":["SRC-PROG-2026","SRC-STRAT-2026"]}
-{"a":"NE-TECH-001","b":"NE-DOC-011","r":"IMPLEMENTS","d":"La fiche technologique précise le concept d’innovation et modernité.","src":["SRC-STRAT-2026"]}
-{"a":"NE-TECH-001","b":"NE-DOC-008","r":"IMPLEMENTS","d":"La maîtrise technologique décline la souveraineté nationale.","src":["SRC-STRAT-2026"]}
 {"a":"NE-DEF-001","b":"NE-DOC-008","r":"IMPLEMENTS","d":"La dissuasion est présentée comme un attribut de souveraineté.","src":["SRC-STRAT-2026"]}
 {"a":"NE-DEF-002","b":"NE-PROG-001","r":"PART_OF","d":"La défense est une mission régalienne centrale du projet.","src":["SRC-PROG-2026","SRC-STRAT-2026"]}
 {"a":"NE-DEF-002","b":"NE-TECH-001","r":"RELATED_TO","d":"Les capacités militaires dépendent aussi des technologies critiques.","src":["SRC-STRAT-2026"]}
@@ -124,3 +121,6 @@
 {"a":"NE-INT-002","b":"NE-DOC-008","r":"SUPPORTS","d":"Les intérêts français sont le critère directeur de l’autonomie stratégique.","src":["SRC-STRAT-2026"]}
 {"a":"CHARLY-METH-017","b":"CHARLY-METH-008","r":"IMPLEMENTS","d":"Les handles, alias et le nom visible définissent les formes d’invocation du même assistant.","src":["SRC-SPEC-001"]}
 {"a":"CHARLY-METH-017","b":"CHARLY-METH-002","r":"SUPPORTS","d":"L’unicité des alias évite la création de variantes doctrinales ou de KB divergentes.","src":["SRC-SPEC-001"]}
+{"a":"NE-EDU-004","b":"NE-EDU-001","r":"RELATED_TO","d":"La liberté scolaire et l’autonomie des établissements complètent la différenciation des parcours.","src":["SRC-JDD-EDU-2026"]}
+{"a":"NE-EDU-004","b":"NE-EDU-002","r":"SUPPORTS","d":"L’autorité, l’évaluation et l’exigence soutiennent la priorité donnée à la transmission des savoirs.","src":["SRC-JDD-EDU-2026"]}
+{"a":"NE-EDU-004","b":"NE-PROG-001","r":"PART_OF","d":"La position éducative complète la doctrine et le programme sur l’école.","src":["SRC-JDD-EDU-2026"]}

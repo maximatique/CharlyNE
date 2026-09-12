@@ -1,0 +1,19 @@
+{
+  "release": "v1.4.0",
+  "skill_identity": "charly-coach-militant-ne",
+  "display_name": "CharlyNé",
+  "primary_handle": "@charly",
+  "status": "PASS",
+  "spec_version": "1.3",
+  "ontology_version": "0.4.0",
+  "knowledge_runtime": 115,
+  "relations_runtime": 126,
+  "sources": 17,
+  "competences": 16,
+  "kb_live_enabled": true,
+  "archive_entries": 11,
+  "sha256_skill_zip": "f8dabe1934e2c751c2b3b4e56a6649dd4e8416623c8e669e7b40160b5cc9659d",
+  "size_bytes": 29620,
+  "validated_at": "2026-09-12",
+  "legal_review_required": true
+}

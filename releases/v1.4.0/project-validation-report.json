@@ -1,0 +1,61 @@
+{
+  "release": "v1.4.0",
+  "status": "PASS",
+  "distribution_change": "KB Core 0.4.0 + optional KB Live refresh",
+  "spec_version": "1.3",
+  "ontology_version": "0.4.0",
+  "knowledge_runtime": 115,
+  "relations_runtime": 126,
+  "sources": 17,
+  "competences": 16,
+  "packages": [
+    {
+      "platform": "chatgpt",
+      "file": "charly-chatgpt-project.zip",
+      "size_bytes": 27391,
+      "sha256": "bd34a17e7d9687af23e8e7a5adc1e4e7f6a1a92ef48f8307673a41bc25a0c9ce",
+      "entries": 8
+    },
+    {
+      "platform": "claude",
+      "file": "charly-claude-project.zip",
+      "size_bytes": 27348,
+      "sha256": "b72ee33e81d77aac0e9aad7db9b26f3c6f7987bb3e8e2e69068b9c807f8d436a",
+      "entries": 8
+    },
+    {
+      "platform": "gemini",
+      "file": "charly-gemini-project.zip",
+      "size_bytes": 27315,
+      "sha256": "1627f8e12af949c37565e7bf17b6dec1aeacd378b6e02b641a698a3a1561448d",
+      "entries": 8
+    },
+    {
+      "platform": "universal",
+      "file": "charly-universal-project.zip",
+      "size_bytes": 27215,
+      "sha256": "1d210b4393e4d9fce39a0012f5f01b3eadfa89736c7a2de98868c453c3028b39",
+      "entries": 8
+    },
+    {
+      "platform": "skill",
+      "file": "skill.zip",
+      "size_bytes": 29620,
+      "sha256": "f8dabe1934e2c751c2b3b4e56a6649dd4e8416623c8e669e7b40160b5cc9659d",
+      "entries": 11
+    }
+  ],
+  "shared_kb_hashes": {
+    "charly_competences.jsonl": "4164ad1e665bdb4f6e9a2347d2187034b37e6621c8bb46b1ea0177a4a7009663",
+    "charly_kb_manifest.json": "6acb6842d47aaa665ae59b128172fd7bd8b92a53bc05c76d38b9cb5b80813761",
+    "charly_relations.jsonl": "3d96ae6496f4f8e7291b101b473e0387228926a90f51ebcbfa8bbd73cda6c54b",
+    "charly_schema.json": "4d962d7cb827c81ac1332c725a0c2115d135c0a09fa5caa814bd6c721d1676c7",
+    "charly_sources.jsonl": "2f02c8848fc0dada1e06e482e3fbf24228dd584918448010f938bf48b90a0dbd",
+    "charly_knowledge.jsonl": "a8595a2d8bd5518238c7019b0b416659e8be633251adf2729f3a8cf4d90c9ab3"
+  },
+  "same_core_kb_across_project_packages": true,
+  "kb_live_enabled": true,
+  "skill_runtime_changed": true,
+  "legal_review_required": true,
+  "validated_at": "2026-09-12"
+}
