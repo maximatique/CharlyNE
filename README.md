@@ -6,7 +6,8 @@ Dépôt de distribution et de versioning de **CharlyNé**.
 
 - Release de distribution : **v1.4.0**
 - KB logique : **v1.4.0**
-- Spécification : **v1.3**
+- Spécification distribuée : **v1.3**
+- Spécification préparée dans Charlie Studio : **v1.4**
 - Ontologie logique : **0.4.0**
 - Nom visible : **CharlyNé**
 - Handle principal : `@charly`
@@ -24,6 +25,24 @@ CharlyNé utilise désormais deux couches complémentaires :
 La KB Live peut compléter la Core lorsqu'une information est récente, mais elle ne remplace jamais silencieusement une connaissance consolidée. Une contradiction ou une évolution potentielle doit être arbitrée lors de la consolidation.
 
 Dossier Live : https://drive.google.com/drive/folders/1zg7b_EJLM1jpM88onu3paz0LuREu7rQ6
+
+### Collecte Live préparée en spec v1.4
+
+La spec v1.4 formalise une collecte incrémentale prioritaire depuis :
+
+1. https://www.unenouvelleenergie.fr/agenda/
+2. https://www.unenouvelleenergie.fr/actualites/dans-les-medias/
+3. https://www.unenouvelleenergie.fr/actualites/
+4. sources manuelles ajoutées par Charlie Studio.
+
+Les événements n'ont pas besoin d'être requalifiés manuellement lorsqu'ils sont passés : leur caractère à venir / en cours / passé est calculé à la lecture à partir de leurs dates.
+
+Backfill Live initial au 12 septembre 2026 :
+- Presse : 30 entrées ;
+- Agenda : 20 événements ;
+- manifest distant : schéma 1.1, version Live `2026-09-12.1`.
+
+Voir [`docs/SPEC_V1.4_CHANGELOG.md`](./docs/SPEC_V1.4_CHANGELOG.md).
 
 ## Choisir son mode d’installation
 
@@ -68,7 +87,7 @@ Cette version intègre notamment :
 - l’enrichissement de `NE-EDU-001` et `NE-EDU-002` ;
 - la nouvelle connaissance `NE-EDU-004` sur autorité, évaluation et différenciation des parcours ;
 - la méthode `CHARLY-METH-018` pour la KB Live distante et sa consolidation périodique ;
-- la spécification **v1.3** et l’ontologie **0.4.0**.
+- la spécification distribuée **v1.3** et l’ontologie **0.4.0**.
 
 Voir [`releases/v1.4.0/RELEASE.md`](./releases/v1.4.0/RELEASE.md).
 
@@ -79,6 +98,7 @@ Voir [`releases/v1.4.0/RELEASE.md`](./releases/v1.4.0/RELEASE.md).
 - `src/project/` : socle et adaptateurs de plateforme ;
 - `scripts/` : builds déterministes ;
 - `tests/` : tests de référence ;
+- `docs/` : évolutions de spécification et documentation de maintenance ;
 - `releases/v1.4.0/` : packages distribuables et rapports de validation.
 
 ## Fiabilité
