@@ -5,13 +5,13 @@ from pathlib import Path, PurePosixPath
 
 R = Path(__file__).resolve().parents[1]
 N = 'charly-coach-militant-ne'
-V = 'v1.4.0'
+V = 'v1.5.0'
 S = R / 'src' / 'skill'
 K = R / 'src' / 'kb'
 O = R / 'skill.zip'
 D = R / 'releases' / V / 'skill.zip'
 P = R / 'releases' / V / 'skill-validation-report.json'
-FIXED = (2026, 9, 12, 12, 0, 0)
+FIXED = (2026, 10, 22, 12, 0, 0)
 
 def read_jsonl(path: Path):
     out=[]
@@ -32,7 +32,7 @@ def main():
     if 'Maximatique - Bureau NÉ 13 -  Aix en Provence' not in (S/'references/author.md').read_text(encoding='utf-8'): raise SystemExit('invalid author')
     manifest=json.loads((K/'charly_kb_manifest.json').read_text(encoding='utf-8'))
     schema=json.loads((K/'charly_schema.json').read_text(encoding='utf-8'))
-    expected={'release_version':'1.4.0','spec_version':'1.3','ontology_version':'0.4.0','display_name':'CharlyNé','runtime_active':115,'relations_runtime':126,'sources':17,'competences_active':16}
+    expected={'release_version':'1.5.0','spec_version':'1.3','ontology_version':'0.5.0','display_name':'CharlyNé','runtime_active':189,'relations_runtime':252,'sources':17,'competences_active':16}
     if any(manifest.get(k)!=v for k,v in expected.items()): raise SystemExit(f'manifest mismatch: {manifest}')
     if schema.get('product') != N or schema.get('display_name') != 'CharlyNé': raise SystemExit('schema mismatch')
     live=manifest.get('live') or {}
@@ -40,9 +40,9 @@ def main():
     with gzip.open(K/'charly_knowledge.jsonl.gz','rt',encoding='utf-8') as f: knowledge_text=f.read()
     knowledge=[json.loads(x) for x in knowledge_text.splitlines() if x.strip()]
     relations=read_jsonl(K/'charly_relations.jsonl'); sources=read_jsonl(K/'charly_sources.jsonl'); competences=read_jsonl(K/'charly_competences.jsonl')
-    if (len(knowledge),len(relations),len(sources),len(competences)) != (115,126,17,16): raise SystemExit('runtime count mismatch')
+    if (len(knowledge),len(relations),len(sources),len(competences)) != (189,252,17,16): raise SystemExit('runtime count mismatch')
     ids={x['i'] for x in knowledge}
-    for required_id in ('NE-EDU-001','NE-EDU-002','NE-EDU-004','CHARLY-METH-018'):
+    for required_id in ('NE-EDU-001','NE-EDU-002','NE-EDU-004','CHARLY-METH-018','NE-BUR-005','NE-DL-013','NE-ECO-010','NE-SAN-008'):
         if required_id not in ids: raise SystemExit(f'missing required knowledge {required_id}')
     forbidden={'NE-ID-006','NE-FIN-002','NE-RET-002','CHARLY-METH-015','CHARLY-METH-016'}
     if ids & forbidden: raise SystemExit(f'excluded IDs leaked: {sorted(ids&forbidden)}')
@@ -62,6 +62,6 @@ def main():
     with zipfile.ZipFile(O) as z:
         if len(z.namelist())!=11 or z.testzip(): raise SystemExit('zip validation failed')
     data=O.read_bytes(); digest=hashlib.sha256(data).hexdigest()
-    report={'release':V,'skill_identity':N,'display_name':'CharlyNé','primary_handle':'@charly','status':'PASS','spec_version':'1.3','ontology_version':'0.4.0','knowledge_runtime':115,'relations_runtime':126,'sources':17,'competences':16,'kb_live_enabled':True,'archive_entries':11,'sha256_skill_zip':digest,'size_bytes':len(data),'validated_at':'2026-09-12','legal_review_required':True}
+    report={'release':V,'skill_identity':N,'display_name':'CharlyNé','primary_handle':'@charly','status':'PASS','spec_version':'1.3','ontology_version':'0.5.0','knowledge_runtime':189,'relations_runtime':252,'sources':17,'competences':16,'kb_live_enabled':True,'archive_entries':11,'sha256_skill_zip':digest,'size_bytes':len(data),'validated_at':'2026-10-22','legal_review_required':True}
     P.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__': main()

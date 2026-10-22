@@ -4,11 +4,11 @@ Dépôt de distribution et de versioning de **CharlyNé**.
 
 ## Version courante
 
-- Release de distribution : **v1.4.0**
-- KB logique : **v1.4.0**
+- Release de distribution : **v1.5.0**
+- KB logique : **v1.5.0**
 - Spécification distribuée : **v1.3**
 - Spécification préparée dans Charlie Studio : **v1.4**
-- Ontologie logique : **0.4.0**
+- Ontologie logique : **0.5.0**
 - Nom visible : **CharlyNé**
 - Handle principal : `@charly`
 - Alias : `@charlyné`, `CoachNé`, `Lisnardassistant`, `assitantné`, `Charlyne`, `coachmilitant`
@@ -42,16 +42,18 @@ Backfill Live initial au 12 septembre 2026 :
 - Agenda : 20 événements ;
 - manifest distant : schéma 1.1, version Live `2026-09-12.1`.
 
+Mise à jour Agenda préparée avec la v1.5.0 (fichiers à déposer dans le dossier Live) : version Live `2026-10-22.1` ; la Presse n’est pas modifiée.
+
 Voir [`docs/SPEC_V1.4_CHANGELOG.md`](./docs/SPEC_V1.4_CHANGELOG.md).
 
 ## Choisir son mode d’installation
 
 ### Projet par plateforme
 
-- **ChatGPT** : [`releases/v1.4.0/charly-chatgpt-project.zip`](./releases/v1.4.0/charly-chatgpt-project.zip)
-- **Claude** : [`releases/v1.4.0/charly-claude-project.zip`](./releases/v1.4.0/charly-claude-project.zip)
-- **Gemini** : [`releases/v1.4.0/charly-gemini-project.zip`](./releases/v1.4.0/charly-gemini-project.zip)
-- **Universal Markdown** : [`releases/v1.4.0/charly-universal-project.zip`](./releases/v1.4.0/charly-universal-project.zip)
+- **ChatGPT** : [`releases/v1.5.0/charly-chatgpt-project.zip`](./releases/v1.5.0/charly-chatgpt-project.zip)
+- **Claude** : [`releases/v1.5.0/charly-claude-project.zip`](./releases/v1.5.0/charly-claude-project.zip)
+- **Gemini** : [`releases/v1.5.0/charly-gemini-project.zip`](./releases/v1.5.0/charly-gemini-project.zip)
+- **Universal Markdown** : [`releases/v1.5.0/charly-universal-project.zip`](./releases/v1.5.0/charly-universal-project.zip)
 
 Procédure :
 
@@ -72,10 +74,10 @@ Les quatre packages utilisent exactement la même **KB Core**. Seules les instru
 
 L’identité technique reste `charly-coach-militant-ne`, afin qu’une mise à jour remplace la Skill existante au lieu de créer une variante parallèle.
 
-## Contenu de la KB Core v1.4.0
+## Contenu de la KB Core v1.5.0
 
-- **115** connaissances actives embarquées ;
-- **126** relations runtime ;
+- **189** connaissances actives embarquées ;
+- **252** relations runtime ;
 - **17** sources actives ;
 - **16** compétences actives.
 
@@ -83,13 +85,14 @@ Les éléments `ARBITRATION_REQUIRED` restent exclus du runtime public.
 
 Cette version intègre notamment :
 
+- l’intégration du contenu publié sur le site officiel de Nouvelle Énergie (programme et pages thématiques, 112 fiches « Questions », *Livre noir de la bureaucratie*, livrets Agriculture et Santé) : **74** connaissances créées et **42** enrichies, sans changement de structure ni de fonctionnement ;
 - la tribune JDD du 11 septembre 2026 sur l’école ;
 - l’enrichissement de `NE-EDU-001` et `NE-EDU-002` ;
 - la nouvelle connaissance `NE-EDU-004` sur autorité, évaluation et différenciation des parcours ;
 - la méthode `CHARLY-METH-018` pour la KB Live distante et sa consolidation périodique ;
-- la spécification distribuée **v1.3** et l’ontologie **0.4.0**.
+- la spécification distribuée **v1.3** et l’ontologie **0.5.0**.
 
-Voir [`releases/v1.4.0/RELEASE.md`](./releases/v1.4.0/RELEASE.md).
+Voir [`releases/v1.5.0/RELEASE.md`](./releases/v1.5.0/RELEASE.md).
 
 ## Structure
 
@@ -99,7 +102,7 @@ Voir [`releases/v1.4.0/RELEASE.md`](./releases/v1.4.0/RELEASE.md).
 - `scripts/` : builds déterministes ;
 - `tests/` : tests de référence ;
 - `docs/` : évolutions de spécification et documentation de maintenance ;
-- `releases/v1.4.0/` : packages distribuables et rapports de validation.
+- `releases/v1.5.0/` : packages distribuables et rapports de validation.
 
 ## Fiabilité
 

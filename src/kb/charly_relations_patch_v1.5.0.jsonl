@@ -1,0 +1,126 @@
+{"a":"NE-TECH-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-TECH-002","b":"NE-TECH-001","r":"RELATED_TO","d":"L’IA décline la souveraineté technologique.","src":["SRC-FAQ-2026"]}
+{"a":"NE-AGR-007","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-AGR-007","b":"NE-AGR-001","r":"IMPLEMENTS","d":"La réciprocité des normes protège la souveraineté alimentaire.","src":["SRC-FAQ-2026","SRC-AGRI-2026"]}
+{"a":"NE-EDU-005","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-EDU-005","b":"NE-EDU-001","r":"RELATED_TO","d":"L’autonomie des établissements prolonge la liberté scolaire.","src":["SRC-FAQ-2026","SRC-PROG-2026"]}
+{"a":"NE-SAN-006","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SAN-006","b":"NE-SAN-004","r":"RELATED_TO","d":"L’accès aux soins hors des grandes villes complète la lutte contre les déserts médicaux.","src":["SRC-FAQ-2026","SRC-SANTE-2026"]}
+{"a":"NE-DL-006","b":"NE-DL-001","r":"ATTRIBUTE_OF","d":"Position ou fait attribué à David Lisnard, source datée.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DEF-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-DEF-003","b":"NE-DEF-002","r":"RELATED_TO","d":"Le budget de défense finance les capacités militaires dans la durée.","src":["SRC-FAQ-2026"]}
+{"a":"NE-SEC-004","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SEC-004","b":"NE-SEC-003","r":"RELATED_TO","d":"La laïcité dans l’espace public complète la lutte contre l’islamisme radical.","src":["SRC-FAQ-2026"]}
+{"a":"NE-IMM-004","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-IMM-004","b":"NE-IMM-001","r":"IMPLEMENTS","d":"L’exécution des éloignements met en œuvre la maîtrise de l’immigration.","src":["SRC-FAQ-2026"]}
+{"a":"NE-JUS-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-JUS-003","b":"NE-JUS-001","r":"RELATED_TO","d":"La certitude de la sanction précise la justice plus rapide.","src":["SRC-FAQ-2026"]}
+{"a":"NE-SEC-005","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SEC-005","b":"NE-SEC-001","r":"IMPLEMENTS","d":"Les polices municipales déclinent la police territoriale.","src":["SRC-FAQ-2026","SRC-PROG-2026"]}
+{"a":"NE-SEC-006","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SEC-006","b":"NE-SEC-002","r":"IMPLEMENTS","d":"Les mesures de terrain déclinent la lutte contre le narcotrafic.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ARG-008","b":"NE-SEC-001","r":"EXPLAINS","d":"Argumentaire rattaché à la sécurité.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ID-008","b":"NE-ID-007","r":"RELATED_TO","d":"Soutiens et élus revendiqués, à dater comme les effectifs.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DL-007","b":"NE-DL-001","r":"ATTRIBUTE_OF","d":"Position ou fait attribué à David Lisnard, source datée.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DL-008","b":"NE-DL-001","r":"ATTRIBUTE_OF","d":"Position ou fait attribué à David Lisnard, source datée.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ARG-009","b":"NE-DOC-013","r":"EXPLAINS","d":"Argumentaire rattaché au libéralisme revendiqué.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DOC-013","b":"NE-DOC-001","r":"SUPPORTS","d":"Le libéralisme revendiqué prolonge la valeur de liberté.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DL-009","b":"NE-DL-001","r":"ATTRIBUTE_OF","d":"Position ou fait attribué à David Lisnard, source datée.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ARG-010","b":"NE-DL-003","r":"EXPLAINS","d":"Argumentaire rattaché à la candidature 2027.","src":["SRC-FAQ-2026"]}
+{"a":"NE-INT-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-INT-003","b":"NE-INT-001","r":"RELATED_TO","d":"La position sur l’Ukraine applique la souveraineté d’alliances.","src":["SRC-FAQ-2026"]}
+{"a":"NE-EU-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-EU-002","b":"NE-EU-001","r":"RELATED_TO","d":"La conception de l’Union précise l’Europe levier de puissance.","src":["SRC-FAQ-2026"]}
+{"a":"NE-FIN-005","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-FIN-005","b":"NE-FIN-003","r":"RELATED_TO","d":"Le chiffrage du programme encadre l’affectation des économies.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ARG-011","b":"NE-DOC-005","r":"EXPLAINS","d":"Argumentaire rattaché à l’État-performance.","src":["SRC-FAQ-2026"]}
+{"a":"NE-SAN-007","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SAN-007","b":"NE-SAN-001","r":"RELATED_TO","d":"La réforme de l’assurance maladie complète la politique de santé.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ENV-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ENV-003","b":"NE-ENV-001","r":"RELATED_TO","d":"La suppression des ZFE relève de l’écologie générale.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ECO-007","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ECO-007","b":"NE-ECO-003","r":"RELATED_TO","d":"Le prix du carburant relève du pouvoir d’achat.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ECO-008","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ECO-008","b":"NE-ECO-005","r":"RELATED_TO","d":"Les droits de succession relèvent de la transmission du patrimoine.","src":["SRC-FAQ-2026"]}
+{"a":"NE-STATE-007","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-STATE-007","b":"NE-STATE-006","r":"RELATED_TO","d":"Le statut de la fonction publique accompagne la réduction des effectifs.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DOC-014","b":"NE-DOC-001","r":"SUPPORTS","d":"La propriété est présentée comme condition de la liberté.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ARG-012","b":"NE-FIN-001","r":"EXPLAINS","d":"Argumentaire rattaché à la maîtrise des déficits.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ECO-009","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ECO-009","b":"NE-SOC-002","r":"RELATED_TO","d":"L’assurance chômage applique le principe que le travail doit payer.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ECO-010","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ECO-010","b":"NE-ECO-002","r":"RELATED_TO","d":"Le temps de travail complète la réforme du contrat de travail.","src":["SRC-FAQ-2026"]}
+{"a":"NE-SOC-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SOC-002","b":"NE-SOC-001","r":"RELATED_TO","d":"Le principe de travail rémunérateur encadre l’allocation sociale unique.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ECO-011","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ECO-011","b":"NE-ECO-001","r":"RELATED_TO","d":"Le commerce de proximité bénéficie de la baisse des impôts de production.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ECO-012","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ECO-012","b":"NE-ECO-001","r":"RELATED_TO","d":"La stabilité fiscale des indépendants complète la baisse des impôts de production.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DL-010","b":"NE-DL-001","r":"ATTRIBUTE_OF","d":"Position ou fait attribué à David Lisnard, source datée.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DL-011","b":"NE-DL-001","r":"ATTRIBUTE_OF","d":"Position ou fait attribué à David Lisnard, source datée.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DL-012","b":"NE-DL-001","r":"ATTRIBUTE_OF","d":"Position ou fait attribué à David Lisnard, source datée.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DL-013","b":"NE-DL-001","r":"ATTRIBUTE_OF","d":"Position ou fait attribué à David Lisnard, source datée.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DL-014","b":"NE-DL-001","r":"ATTRIBUTE_OF","d":"Position ou fait attribué à David Lisnard, source datée.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DL-015","b":"NE-DL-001","r":"ATTRIBUTE_OF","d":"Position ou fait attribué à David Lisnard, source datée.","src":["SRC-FAQ-2026"]}
+{"a":"NE-JUS-005","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-JUS-005","b":"NE-JUS-002","r":"RELATED_TO","d":"La responsabilité parentale complète la justice des mineurs.","src":["SRC-FAQ-2026"]}
+{"a":"NE-JUS-006","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-JUS-006","b":"NE-JUS-001","r":"RELATED_TO","d":"La responsabilité des magistrats précise une justice responsable.","src":["SRC-FAQ-2026"]}
+{"a":"NE-JUS-004","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-JUS-004","b":"NE-JUS-001","r":"RELATED_TO","d":"L’exécution des peines prolonge la réforme de la justice.","src":["SRC-FAQ-2026"]}
+{"a":"NE-BUR-004","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-BUR-004","b":"NE-STATE-002","r":"IMPLEMENTS","d":"La refonte des codes concrétise la réduction du stock de normes.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ENV-004","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ENV-004","b":"NE-ENV-001","r":"RELATED_TO","d":"La méthode pragmatique précise l’ambition écologique.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ARG-013","b":"NE-IMM-001","r":"EXPLAINS","d":"Argumentaire rattaché à la maîtrise de l’immigration.","src":["SRC-FAQ-2026"]}
+{"a":"NE-DOC-015","b":"NE-PROG-001","r":"EXPLAINS","d":"Le projet en trois mots résume l’architecture du programme.","src":["SRC-FAQ-2026"]}
+{"a":"NE-ARG-014","b":"NE-DEC-001","r":"EXPLAINS","d":"Argumentaire rattaché à la décentralisation.","src":["SRC-FAQ-2026"]}
+{"a":"NE-RET-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-RET-003","b":"NE-RET-001","r":"RELATED_TO","d":"L’âge de départ précise la réforme des retraites.","src":["SRC-FAQ-2026"]}
+{"a":"NE-RET-004","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-RET-004","b":"NE-RET-001","r":"RELATED_TO","d":"Les trois étages précisent la retraite mixte.","src":["SRC-FAQ-2026"]}
+{"a":"NE-FIN-006","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-FIN-006","b":"NE-FIN-003","r":"RELATED_TO","d":"Les gisements d’économies alimentent les 200 Md€.","src":["SRC-FAQ-2026"]}
+{"a":"NE-STATE-008","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-STATE-008","b":"NE-DOC-005","r":"IMPLEMENTS","d":"Le management par objectifs met en œuvre l’État-performance.","src":["SRC-PROG-2026"]}
+{"a":"NE-EU-003","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-EU-003","b":"NE-EU-001","r":"RELATED_TO","d":"La démocratisation de l’Union précise la conception européenne.","src":["SRC-PROG-2026"]}
+{"a":"NE-ECO-013","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ECO-013","b":"NE-ECO-003","r":"RELATED_TO","d":"La baisse des charges sur l’emploi soutient le pouvoir d’achat.","src":["SRC-PROG-2026"]}
+{"a":"NE-JUS-007","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-JUS-007","b":"NE-JUS-001","r":"RELATED_TO","d":"Moyens et gouvernance de la justice.","src":["SRC-PROG-2026"]}
+{"a":"NE-EDU-006","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-EDU-006","b":"NE-EDU-004","r":"RELATED_TO","d":"Les voies d’excellence prolongent la différenciation des parcours.","src":["SRC-PROG-2026"]}
+{"a":"NE-DEC-005","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-DEC-005","b":"NE-DEC-001","r":"RELATED_TO","d":"L’aménagement du territoire accompagne la décentralisation.","src":["SRC-PROG-2026"]}
+{"a":"NE-ENV-005","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ENV-005","b":"NE-ENE-002","r":"RELATED_TO","d":"Les filières bas carbone prolongent la croissance bas carbone.","src":["SRC-PROG-2026"]}
+{"a":"NE-EDU-007","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-EDU-007","b":"NE-EDU-002","r":"RELATED_TO","d":"Le certificat de fin de primaire sert les fondamentaux.","src":["SRC-PROG-2026"]}
+{"a":"NE-BUR-005","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-BUR-005","b":"NE-STATE-002","r":"IMPLEMENTS","d":"Le plan des cent jours engage la réduction des normes.","src":["SRC-BUREAU-2026"]}
+{"a":"NE-BUR-006","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-BUR-006","b":"NE-STATE-005","r":"RELATED_TO","d":"Le principe « Dites-le nous une fois » s’appuie sur l’architecture numérique de l’État.","src":["SRC-BUREAU-2026"]}
+{"a":"NE-BUR-007","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-BUR-007","b":"NE-STATE-004","r":"RELATED_TO","d":"Le silence valant accord complète le contrôle a posteriori.","src":["SRC-BUREAU-2026"]}
+{"a":"NE-BUR-008","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-BUR-008","b":"NE-STATE-004","r":"RELATED_TO","d":"Le droit à l’erreur complète le contrôle a posteriori.","src":["SRC-BUREAU-2026"]}
+{"a":"NE-BUR-009","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-BUR-009","b":"NE-BUR-003","r":"RELATED_TO","d":"Le rescrit de cohérence traite les normes contradictoires.","src":["SRC-BUREAU-2026"]}
+{"a":"NE-HOU-002","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-HOU-002","b":"NE-HOU-001","r":"IMPLEMENTS","d":"Les mesures DPE, ZAN et SRU déclinent la libéralisation du logement.","src":["SRC-BUREAU-2026"]}
+{"a":"NE-BUR-010","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-BUR-010","b":"NE-ECO-002","r":"RELATED_TO","d":"Les simplifications du droit du travail complètent le contrat de travail unique.","src":["SRC-BUREAU-2026"]}
+{"a":"NE-AGR-008","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-AGR-008","b":"NE-AGR-006","r":"IMPLEMENTS","d":"Les mesures précisent la simplification administrative agricole.","src":["SRC-BUREAU-2026","SRC-AGRI-2026"]}
+{"a":"NE-ECO-014","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-ECO-014","b":"NE-ECO-005","r":"RELATED_TO","d":"La suppression de l’IFI relève de la fiscalité du patrimoine.","src":["SRC-BUREAU-2026"]}
+{"a":"NE-ARG-015","b":"NE-BUR-001","r":"EXPLAINS","d":"Argumentaire rattaché au diagnostic bureaucratique.","src":["SRC-BUREAU-2026"]}
+{"a":"NE-AGR-009","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-AGR-009","b":"NE-AGR-001","r":"RELATED_TO","d":"Le renouvellement des générations conditionne la souveraineté agricole.","src":["SRC-AGRI-2026"]}
+{"a":"NE-AGR-010","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-AGR-010","b":"NE-AGR-001","r":"RELATED_TO","d":"La diplomatie agricole prolonge la souveraineté alimentaire.","src":["SRC-AGRI-2026","SRC-PROG-2026"]}
+{"a":"NE-SAN-008","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SAN-008","b":"NE-SAN-001","r":"RELATED_TO","d":"La prévention relève de la politique de santé globale.","src":["SRC-SANTE-2026","SRC-FAQ-2026"]}
+{"a":"NE-SAN-009","b":"NE-PROG-001","r":"PART_OF","d":"Connaissance rattachée à l’architecture programmatique ou doctrinale.","src":[]}
+{"a":"NE-SAN-009","b":"NE-SAN-001","r":"RELATED_TO","d":"Le financement des soins relève de la politique de santé globale.","src":["SRC-SANTE-2026"]}

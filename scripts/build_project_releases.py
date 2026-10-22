@@ -3,8 +3,8 @@ from __future__ import annotations
 import gzip, hashlib, json, shutil, tempfile, zipfile
 from pathlib import Path, PurePosixPath
 
-R=Path(__file__).resolve().parents[1]; K=R/'src/kb'; P=R/'src/project'; V='v1.4.0'; D=R/'releases'/V
-FIXED=(2026,9,12,12,0,0)
+R=Path(__file__).resolve().parents[1]; K=R/'src/kb'; P=R/'src/project'; V='v1.5.0'; D=R/'releases'/V
+FIXED=(2026,10,22,12,0,0)
 PLATFORMS={'chatgpt':('CHATGPT_INSTRUCTIONS.md','CharlyNé — Projet ChatGPT'),'claude':('CLAUDE.md','CharlyNé — Projet Claude'),'gemini':('GEMINI_INSTRUCTIONS.md','CharlyNé — Gem Gemini'),'universal':(None,'CharlyNé — Universal Markdown')}
 KB_FILES=['charly_competences.jsonl','charly_kb_manifest.json','charly_relations.jsonl','charly_schema.json','charly_sources.jsonl']
 
@@ -26,9 +26,9 @@ def main():
     for path in required:
         if not path.is_file(): raise SystemExit(f'missing {path.relative_to(R)}')
     manifest=json.loads((K/'charly_kb_manifest.json').read_text(encoding='utf-8'))
-    if manifest.get('release_version')!='1.4.0' or manifest.get('runtime_active')!=115: raise SystemExit('unexpected manifest')
+    if manifest.get('release_version')!='1.5.0' or manifest.get('runtime_active')!=189: raise SystemExit('unexpected manifest')
     with gzip.open(K/'charly_knowledge.jsonl.gz','rt',encoding='utf-8') as f: knowledge=f.read()
-    if len([x for x in knowledge.splitlines() if x.strip()])!=115: raise SystemExit('knowledge count mismatch')
+    if len([x for x in knowledge.splitlines() if x.strip()])!=189: raise SystemExit('knowledge count mismatch')
     common=(P/'COMMON_INSTRUCTIONS.md').read_text(encoding='utf-8').rstrip()+'\n\n'; D.mkdir(parents=True,exist_ok=True); results=[]
     with tempfile.TemporaryDirectory() as td:
         temp=Path(td)
@@ -43,6 +43,6 @@ def main():
     if not skill_src.is_file(): raise SystemExit('skill.zip missing; run build_skill_release.py first')
     shutil.copyfile(skill_src,D/'skill.zip'); data=(D/'skill.zip').read_bytes(); results.append({'platform':'skill','file':'skill.zip','size_bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'entries':11})
     hashes={name:hashlib.sha256((K/name).read_bytes()).hexdigest() for name in KB_FILES}; hashes['charly_knowledge.jsonl']=hashlib.sha256(knowledge.encode('utf-8')).hexdigest()
-    report={'release':V,'status':'PASS','distribution_change':'KB Core 0.4.0 + optional KB Live refresh','spec_version':'1.3','ontology_version':'0.4.0','knowledge_runtime':115,'relations_runtime':126,'sources':17,'competences':16,'packages':results,'shared_kb_hashes':hashes,'same_core_kb_across_project_packages':True,'kb_live_enabled':True,'skill_runtime_changed':True,'legal_review_required':True,'validated_at':'2026-09-12'}
+    report={'release':V,'status':'PASS','distribution_change':'KB Core 0.5.0 + optional KB Live refresh','spec_version':'1.3','ontology_version':'0.5.0','knowledge_runtime':189,'relations_runtime':252,'sources':17,'competences':16,'packages':results,'shared_kb_hashes':hashes,'same_core_kb_across_project_packages':True,'kb_live_enabled':True,'skill_runtime_changed':True,'legal_review_required':True,'validated_at':'2026-10-22'}
     (D/'project-validation-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__': main()
