@@ -38,3 +38,35 @@
 {"id":"T38","q":"Que signifie la souveraineté technologique dans la KB ?","expected_ids":["NE-TECH-001"]}
 {"id":"T39","q":"Quelle doctrine de défense et de dissuasion est documentée ?","expected_ids":["NE-DEF-001","NE-DEF-002"]}
 {"id":"T40","q":"Que signifie souveraineté d’alliances ?","expected_ids":["NE-INT-001","NE-INT-002"]}
+{"id":"T41","q":"Que propose Nouvelle Énergie sur les 35 heures ?","expected_ids":["NE-ECO-010"]}
+{"id":"T42","q":"Quelle différence entre David Lisnard et le RN ?","expected_ids":["NE-DL-013","NE-DL-012"]}
+{"id":"T43","q":"David Lisnard est-il ultralibéral ?","expected_ids":["NE-ARG-009","NE-DOC-013"]}
+{"id":"T44","q":"Nouvelle Énergie veut-elle privatiser les services publics ?","expected_ids":["NE-ARG-011"]}
+{"id":"T45","q":"Pourquoi David Lisnard a-t-il quitté Les Républicains ?","expected_ids":["NE-DL-008"]}
+{"id":"T46","q":"Quelle différence avec Bruno Retailleau ?","expected_ids":["NE-DL-014"]}
+{"id":"T47","q":"Quelle différence avec Édouard Philippe ?","expected_ids":["NE-DL-015"]}
+{"id":"T48","q":"Que pense David Lisnard d'Emmanuel Macron ?","expected_ids":["NE-DL-011"]}
+{"id":"T49","q":"Quel est le plan des cent premiers jours contre la bureaucratie ?","expected_ids":["NE-BUR-005"]}
+{"id":"T50","q":"Que signifie « silence vaut accord » dans le programme ?","expected_ids":["NE-BUR-007"]}
+{"id":"T51","q":"Que prévoit le droit à l'erreur face à l'administration ?","expected_ids":["NE-BUR-008"]}
+{"id":"T52","q":"Que propose NÉ sur le DPE, le ZAN et la loi SRU ?","expected_ids":["NE-HOU-002"]}
+{"id":"T53","q":"Faut-il supprimer les ZFE ?","expected_ids":["NE-ENV-003"]}
+{"id":"T54","q":"Que propose NÉ sur les droits de succession ?","expected_ids":["NE-ECO-008"]}
+{"id":"T55","q":"Que propose NÉ pour l'assurance chômage ?","expected_ids":["NE-ECO-009"]}
+{"id":"T56","q":"Combien de places de prison et quelle exécution des peines ?","expected_ids":["NE-JUS-004"]}
+{"id":"T57","q":"Les parents de mineurs délinquants seront-ils responsabilisés ?","expected_ids":["NE-JUS-005"]}
+{"id":"T58","q":"Quelle position sur la guerre en Ukraine ?","expected_ids":["NE-INT-003"]}
+{"id":"T59","q":"Que pense NÉ de l'Union européenne ?","expected_ids":["NE-EU-002","NE-EU-003"]}
+{"id":"T60","q":"À quel âge partir à la retraite selon NÉ ?","expected_ids":["NE-RET-003","NE-RET-004"]}
+{"id":"T61","q":"Comment le programme est-il chiffré ?","expected_ids":["NE-FIN-005","NE-FIN-006"]}
+{"id":"T62","q":"Que propose NÉ pour la prévention et la santé mentale ?","expected_ids":["NE-SAN-008"]}
+{"id":"T63","q":"Comment financer la santé et lutter contre la fraude sociale ?","expected_ids":["NE-SAN-009"]}
+{"id":"T64","q":"Que propose NÉ pour l'installation des jeunes agriculteurs ?","expected_ids":["NE-AGR-009"]}
+{"id":"T65","q":"Quelle position sur l'accord Mercosur ?","expected_ids":["NE-AGR-007"]}
+{"id":"T66","q":"Que propose NÉ sur l'intelligence artificielle ?","expected_ids":["NE-TECH-002"]}
+{"id":"T67","q":"Que propose NÉ pour les polices municipales ?","expected_ids":["NE-SEC-005"]}
+{"id":"T68","q":"Quelle position sur la laïcité dans l'espace public ?","expected_ids":["NE-SEC-004"]}
+{"id":"T69","q":"Que propose NÉ sur le statut de la fonction publique ?","expected_ids":["NE-STATE-007"]}
+{"id":"T70","q":"Comment répondre à l'objection sur la complexité des normes ?","expected_ids":["NE-ARG-015"]}
+{"id":"T71","q":"Faut-il supprimer l'IFI ?","expected_ids":["NE-ECO-014"]}
+{"id":"T72","q":"Que propose NÉ pour le commerce de proximité et les artisans ?","expected_ids":["NE-ECO-011"]}
